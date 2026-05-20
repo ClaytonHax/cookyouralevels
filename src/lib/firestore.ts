@@ -8,16 +8,23 @@ import type { Topic, Paper, Question, Level } from '../types'
 
 export async function getTopics(subjectId: string, level: Level): Promise<Topic[]> {
   const ref = collection(db, 'subjects', subjectId, 'topics')
-  const q = query(ref, where('level', '==', level), orderBy('order', 'asc'))
+  // Single-field filter only — no orderBy — to avoid needing a composite index.
+  // Topics are few so sorting client-side is fine.
+  const q = query(ref, where('level', '==', level))
   const snap = await getDocs(q)
-  return snap.docs.map(d => d.data() as Topic)
+  return snap.docs
+    .map(d => d.data() as Topic)
+    .sort((a, b) => a.order - b.order)
 }
 
 export async function getPapers(subjectId: string, level: Level): Promise<Paper[]> {
   const ref = collection(db, 'subjects', subjectId, 'papers')
-  const q = query(ref, where('level', '==', level), orderBy('year', 'desc'))
+  // Same pattern: filter only, sort client-side.
+  const q = query(ref, where('level', '==', level))
   const snap = await getDocs(q)
-  return snap.docs.map(d => d.data() as Paper)
+  return snap.docs
+    .map(d => d.data() as Paper)
+    .sort((a, b) => b.year - a.year)
 }
 
 export async function getTopic(subjectId: string, topicId: string): Promise<Topic | null> {
@@ -60,13 +67,14 @@ export async function getQuestionsByTopic(
 
 export async function getQuestionsByPaper(paperId: string): Promise<Question[]> {
   const ref = collection(db, 'questions')
-  const q = query(
-    ref,
-    where('paperId', '==', paperId),
-    orderBy('questionNumber', 'asc'),
-  )
+  const q = query(ref, where('paperId', '==', paperId))
   const snap = await getDocs(q)
-  return snap.docs.map(d => d.data() as Question)
+  return snap.docs
+    .map(d => d.data() as Question)
+    .sort((a, b) => {
+      if (a.questionNumber !== b.questionNumber) return a.questionNumber - b.questionNumber
+      return (a.partLabel ?? '').localeCompare(b.partLabel ?? '')
+    })
 }
 
 export type { DocumentSnapshot, QueryDocumentSnapshot }

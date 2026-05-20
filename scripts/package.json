@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "seed-topics": "tsx ingest/seed-topics.ts",
     "0-setup":    "tsx ingest/0-setup.ts",
     "1-syllabus": "tsx ingest/1-fetch-syllabus.ts",
     "2-papers":   "tsx ingest/2-fetch-papers.ts",

@@ -26,15 +26,21 @@ export default function SubjectPage() {
   const [topics, setTopics] = useState<Topic[]>([])
   const [papers, setPapers] = useState<Paper[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     setLoading(true)
+    setError(null)
     Promise.all([
       getTopics(subjectId, level),
       getPapers(subjectId, level),
     ]).then(([t, p]) => {
       setTopics(t)
       setPapers(p)
+      setLoading(false)
+    }).catch(err => {
+      console.error('Firestore error:', err)
+      setError(err?.message ?? 'Failed to load content')
       setLoading(false)
     })
   }, [subjectId, level])
@@ -98,6 +104,13 @@ export default function SubjectPage() {
             </button>
           ))}
         </div>
+
+        {/* Error banner */}
+        {error && (
+          <div className="bg-red-50 border border-red-100 rounded-2xl px-5 py-4 mb-6 text-sm font-body text-red-600">
+            <span className="font-semibold">Firestore error: </span>{error}
+          </div>
+        )}
 
         {/* Content */}
         {loading ? (

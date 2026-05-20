@@ -4,6 +4,8 @@ import { AuthProvider, useAuth } from './contexts/AuthContext'
 import Landing from './pages/Landing'
 import Dashboard from './pages/Dashboard'
 import SubjectPage from './pages/SubjectPage'
+import TopicPage from './pages/TopicPage'
+import PaperPage from './pages/PaperPage'
 
 function Spinner() {
   return (
@@ -33,6 +35,8 @@ function AppRoutes() {
       <Route path="/" element={<PublicRoute><Landing /></PublicRoute>} />
       <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
       <Route path="/subject/:subjectId" element={<ProtectedRoute><SubjectPage /></ProtectedRoute>} />
+      <Route path="/subject/:subjectId/topic/:topicId" element={<ProtectedRoute><TopicPage /></ProtectedRoute>} />
+      <Route path="/subject/:subjectId/paper/:paperId" element={<ProtectedRoute><PaperPage /></ProtectedRoute>} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

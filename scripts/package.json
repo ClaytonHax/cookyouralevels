@@ -1,0 +1,29 @@
+{
+  "name": "cook-ingest-scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "0-setup":    "tsx ingest/0-setup.ts",
+    "1-syllabus": "tsx ingest/1-fetch-syllabus.ts",
+    "2-papers":   "tsx ingest/2-fetch-papers.ts",
+    "3-extract":  "tsx ingest/3-extract-questions.ts",
+    "4-classify": "tsx ingest/4-classify-topics.ts",
+    "5-upload":   "tsx ingest/5-upload-firestore.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0",
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "firebase-admin": "^12.0.0",
+    "katex": "^0.16.0",
+    "pdf2pic": "^3.1.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.0",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.5"
+  }
+}

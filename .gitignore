@@ -14,3 +14,10 @@ dist-ssr
 *.tsbuildinfo
 vite.config.js
 vite.config.d.ts
+.vercel
+
+# Ingest pipeline
+scripts/data/
+scripts/.progress.json
+scripts/service-account.json
+scripts/.env

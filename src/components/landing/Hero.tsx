@@ -32,7 +32,7 @@ const floatingCards = [
 ]
 
 export default function Hero() {
-  const { signInWithGoogle } = useAuth()
+  const { openAuth } = useAuth()
 
   return (
     <section className="min-h-screen bg-brand-bg pt-16 flex items-center relative overflow-hidden">
@@ -60,7 +60,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-3 mb-5">
               <button
-                onClick={signInWithGoogle}
+                onClick={openAuth}
                 className="flex items-center justify-center gap-2 px-6 py-3.5 bg-brand-cta hover:bg-emerald-600 text-white font-body font-bold rounded-xl transition-colors duration-150 cursor-pointer text-base"
               >
                 Get Started — it's free
@@ -75,7 +75,7 @@ export default function Hero() {
             </div>
 
             <p className="text-sm font-body text-slate-400">
-              Sign in with Google · No password needed · Free forever
+              Sign in · No password needed · Free forever
             </p>
           </div>
 

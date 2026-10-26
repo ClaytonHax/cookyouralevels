@@ -1,8 +1,8 @@
 const steps = [
   {
     number: '01',
-    title: 'Sign in with Google',
-    description: 'One click to get started. No passwords, no forms — just your Google account.',
+    title: 'Create an account',
+    description: 'Sign up with just your email and a password. No extra forms.',
   },
   {
     number: '02',

@@ -30,7 +30,7 @@ const subjects = [
 ]
 
 export default function Subjects() {
-  const { signInWithGoogle } = useAuth()
+  const { openAuth } = useAuth()
 
   return (
     <section className="py-24 bg-brand-bg">
@@ -81,7 +81,7 @@ export default function Subjects() {
                 </p>
 
                 <button
-                  onClick={signInWithGoogle}
+                  onClick={openAuth}
                   className="flex items-center gap-1.5 text-sm font-body font-semibold text-brand-primary hover:text-indigo-700 transition-colors duration-150 cursor-pointer"
                 >
                   Start practising

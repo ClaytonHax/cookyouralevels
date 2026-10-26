@@ -34,7 +34,7 @@ const stats = [
 
 export default function Dashboard() {
   const { user } = useAuth()
-  const firstName = user?.displayName?.split(' ')[0] ?? 'there'
+  const firstName = user?.displayName?.split(' ')[0] ?? user?.email?.split('@')[0] ?? 'there'
 
   return (
     <div className="min-h-screen bg-brand-bg">

@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-surface text-ink font-body antialiased;
+  }
+  body {
+    @apply min-h-screen;
+    background:
+      radial-gradient(60rem 30rem at 110% -10%, rgba(244, 114, 182, 0.18), transparent 60%),
+      radial-gradient(50rem 30rem at -20% 10%, rgba(251, 207, 232, 0.6), transparent 60%),
+      #fdf2f8;
+    background-attachment: fixed;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-strong ring-offset-2 ring-offset-surface;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .card-soft {
+    @apply bg-white rounded-card shadow-soft p-6;
+  }
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lift hover:-translate-y-0.5;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 font-semibold cursor-pointer transition-all duration-200 min-h-[44px] select-none disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn text-white bg-gradient-to-br from-primary-strong to-ink shadow-glow hover:brightness-110 active:scale-[0.98];
+  }
+  .btn-cta {
+    @apply btn-primary;
+  }
+  .btn-ghost {
+    @apply btn bg-white text-ink shadow-softsm hover:shadow-soft;
+  }
+  .btn-danger {
+    @apply btn bg-red-700 text-white hover:bg-red-800;
+  }
+  .icon-btn {
+    @apply inline-grid place-items-center w-11 h-11 rounded-xl cursor-pointer text-ink/80 transition-colors duration-200 hover:bg-secondary/50 hover:text-ink;
+  }
+  .input-soft {
+    @apply w-full rounded-xl shadow-inset bg-surface px-4 py-2.5 border-0 text-ink text-base placeholder:text-ink/60 min-h-[44px] transition-shadow duration-200 focus:bg-white;
+  }
+  .label-soft {
+    @apply block text-sm font-bold mb-1.5;
+  }
+  .badge-grade {
+    @apply inline-flex items-center justify-center shrink-0 rounded-full font-display shadow-softsm;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-bold;
+  }
+  .skeleton {
+    background: linear-gradient(90deg, #fbe4ef 0%, #fff5fa 50%, #fbe4ef 100%);
+    background-size: 200% 100%;
+    @apply animate-shimmer;
+  }
+  .modal-soft {
+    @apply w-[calc(100%-2rem)] max-w-lg rounded-card bg-white text-ink shadow-lift p-0 m-auto;
+  }
+  .modal-soft[open] {
+    @apply animate-fade-up;
+  }
+  .modal-soft::backdrop {
+    background: rgba(131, 24, 67, 0.28);
+    backdrop-filter: blur(4px);
+  }
+}

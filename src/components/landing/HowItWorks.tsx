@@ -1,55 +1,28 @@
+import Reveal from './Reveal'
+import Section from './Section'
+
 const steps = [
-  {
-    number: '01',
-    title: 'Create an account',
-    description: 'Sign up with just your email and a password. No extra forms.',
-  },
-  {
-    number: '02',
-    title: 'Choose your subject',
-    description: 'Pick from Maths, Physics, or Computer Science. Select AS or A Level topics.',
-  },
-  {
-    number: '03',
-    title: 'Practice & improve',
-    description: 'Work through topical questions, review full solutions, and track your progress.',
-  },
+  { n: '1', title: 'Pick your subjects and exam date', text: 'Tell us what you take and when you sit it. We count down the days so the deadline feels real.' },
+  { n: '2', title: 'Rate, learn, practise', text: 'Mark each objective red, amber or green. Read the notes for the red ones, then drill topical questions until they turn green.' },
+  { n: '3', title: 'Finish with full papers', text: 'Work through past papers, log your scores and track them against your target grade.' },
 ]
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-brand-text mb-4">
-            How it works
-          </h2>
-          <p className="font-body text-lg text-slate-500">
-            Get started in under 30 seconds.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-16">
-          {steps.map((step, index) => (
-            <div key={step.number} className="flex flex-col items-center text-center">
-              <div className="relative mb-6">
-                <div className="w-16 h-16 bg-brand-primary text-white font-body font-bold text-xl rounded-2xl flex items-center justify-center">
-                  {step.number}
-                </div>
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 left-full w-full h-0.5 bg-brand-primary/15 -translate-y-1/2 ml-4" />
-                )}
+    <Section id="how" eyebrow="How it works" title="From “where do I start?” to exam-ready.">
+      <ol className="grid md:grid-cols-3 gap-4">
+        {steps.map((s, i) => (
+          <li key={s.n}>
+            <Reveal delay={i * 80} className="h-full">
+              <div className="h-full relative card p-6">
+                <span className="font-display font-extrabold text-5xl text-flame/30 leading-none" aria-hidden>{s.n}</span>
+                <h3 className="font-display font-bold text-lg text-ink mt-3"><span className="sr-only">Step {s.n}: </span>{s.title}</h3>
+                <p className="text-sm text-ink-2 mt-2 leading-relaxed">{s.text}</p>
               </div>
-              <h3 className="font-body font-bold text-brand-text text-lg mb-3">
-                {step.title}
-              </h3>
-              <p className="font-body text-sm text-slate-500 leading-relaxed max-w-xs">
-                {step.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+            </Reveal>
+          </li>
+        ))}
+      </ol>
+    </Section>
   )
 }

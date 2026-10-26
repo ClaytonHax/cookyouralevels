@@ -1,0 +1,667 @@
+{
+  "subjectId": "computer-science",
+  "code": "9618",
+  "name": "Computer Science",
+  "version": "2026",
+  "pdfUrl": "https://www.cambridgeinternational.org/Images/697372-2026-syllabus.pdf",
+  "components": [
+    {
+      "id": "as",
+      "name": "AS Level",
+      "level": "AS",
+      "papers": [
+        1,
+        2
+      ],
+      "topics": [
+        {
+          "id": "information-representation",
+          "number": "1",
+          "name": "Information representation",
+          "objectives": [
+            {
+              "id": "information-representation.1",
+              "text": "Tell binary prefixes (kibi, mebi, gibi, tebi) apart from decimal ones (kilo, mega, giga, tera)."
+            },
+            {
+              "id": "information-representation.2",
+              "text": "Convert integers between binary, denary, hex and BCD, and use one's and two's complement for negatives."
+            },
+            {
+              "id": "information-representation.3",
+              "text": "Add and subtract binary numbers and spot when overflow happens."
+            },
+            {
+              "id": "information-representation.4",
+              "text": "Give real uses of BCD and hexadecimal."
+            },
+            {
+              "id": "information-representation.5",
+              "text": "Store characters as binary under ASCII, extended ASCII or Unicode."
+            },
+            {
+              "id": "information-representation.6",
+              "text": "Explain how bitmaps and vector graphics are encoded, and pick the better one for a job."
+            },
+            {
+              "id": "information-representation.7",
+              "text": "Work out bitmap file sizes and how resolution and colour depth change quality and size."
+            },
+            {
+              "id": "information-representation.8",
+              "text": "Explain how sound is sampled and how sampling rate and resolution affect size and accuracy."
+            },
+            {
+              "id": "information-representation.9",
+              "text": "Compare lossy and lossless compression and say how text, images and sound can be compressed, including RLE."
+            }
+          ]
+        },
+        {
+          "id": "communication",
+          "number": "2",
+          "name": "Communication",
+          "objectives": [
+            {
+              "id": "communication.1",
+              "text": "Describe LANs and WANs, the hardware that builds a LAN, and what a router does."
+            },
+            {
+              "id": "communication.2",
+              "text": "Compare client-server with peer-to-peer, and thin with thick clients, for a given scenario."
+            },
+            {
+              "id": "communication.3",
+              "text": "Explain bus, star, mesh and hybrid topologies and how packets move through them."
+            },
+            {
+              "id": "communication.4",
+              "text": "Describe cloud computing, with its public/private forms, pros and cons."
+            },
+            {
+              "id": "communication.5",
+              "text": "Compare wired and wireless media (copper, fibre, radio, microwave, satellite)."
+            },
+            {
+              "id": "communication.6",
+              "text": "Explain how Ethernet copes with collisions using CSMA/CD."
+            },
+            {
+              "id": "communication.7",
+              "text": "Explain real-time and on-demand bit streaming and why bit rate matters."
+            },
+            {
+              "id": "communication.8",
+              "text": "Separate the web from the internet and describe the hardware that supports the internet."
+            },
+            {
+              "id": "communication.9",
+              "text": "Explain IPv4/IPv6, subnetting, public vs private and static vs dynamic addresses."
+            },
+            {
+              "id": "communication.10",
+              "text": "Explain how URLs and DNS find resources on the web."
+            }
+          ]
+        },
+        {
+          "id": "hardware",
+          "number": "3",
+          "name": "Hardware",
+          "objectives": [
+            {
+              "id": "hardware.1",
+              "text": "Explain why computers need input, output, primary and secondary storage, and what buffers do."
+            },
+            {
+              "id": "hardware.2",
+              "text": "Describe embedded systems and weigh their advantages and drawbacks."
+            },
+            {
+              "id": "hardware.3",
+              "text": "Describe how common devices work (printers, microphone, speakers, disks, flash, optical drives, touchscreen, VR headset)."
+            },
+            {
+              "id": "hardware.4",
+              "text": "Compare RAM with ROM, SRAM with DRAM, and PROM, EPROM and EEPROM."
+            },
+            {
+              "id": "hardware.5",
+              "text": "Explain monitoring versus control systems, sensors, actuators and feedback."
+            },
+            {
+              "id": "hardware.6",
+              "text": "Know the symbols and truth tables of NOT, AND, OR, NAND, NOR and XOR."
+            },
+            {
+              "id": "hardware.7",
+              "text": "Build logic circuits from problem statements, expressions or truth tables."
+            },
+            {
+              "id": "hardware.8",
+              "text": "Derive truth tables and logic expressions from circuits, statements or each other."
+            }
+          ]
+        },
+        {
+          "id": "processor-fundamentals",
+          "number": "4",
+          "name": "Processor Fundamentals",
+          "objectives": [
+            {
+              "id": "processor-fundamentals.1",
+              "text": "Explain the Von Neumann model, stored programs, and the roles of registers, ALU, CU, clock and IAS."
+            },
+            {
+              "id": "processor-fundamentals.2",
+              "text": "Describe how the address, data and control buses move data, and how ports link peripherals."
+            },
+            {
+              "id": "processor-fundamentals.3",
+              "text": "Explain how cores, bus width, clock speed and cache affect performance."
+            },
+            {
+              "id": "processor-fundamentals.4",
+              "text": "Describe the fetch-execute cycle in register transfer notation."
+            },
+            {
+              "id": "processor-fundamentals.5",
+              "text": "Explain what interrupts are and how the processor detects and services them."
+            },
+            {
+              "id": "processor-fundamentals.6",
+              "text": "Relate assembly language to machine code and describe a two-pass assembler."
+            },
+            {
+              "id": "processor-fundamentals.7",
+              "text": "Trace and write simple assembly programs using the instruction groups and addressing modes."
+            },
+            {
+              "id": "processor-fundamentals.8",
+              "text": "Apply shifts and bit masks to test, set and control bits."
+            }
+          ]
+        },
+        {
+          "id": "system-software",
+          "number": "5",
+          "name": "System Software",
+          "objectives": [
+            {
+              "id": "system-software.1",
+              "text": "Explain why an OS is needed and what it manages (memory, files, security, hardware, processes)."
+            },
+            {
+              "id": "system-software.2",
+              "text": "Describe the utility programs that ship with an OS."
+            },
+            {
+              "id": "system-software.3",
+              "text": "Explain program libraries and the benefit of DLLs."
+            },
+            {
+              "id": "system-software.4",
+              "text": "Explain when assemblers, compilers and interpreters are needed and weigh compiler against interpreter."
+            },
+            {
+              "id": "system-software.5",
+              "text": "Describe IDE features for coding, error detection, presentation and debugging."
+            }
+          ]
+        },
+        {
+          "id": "security-privacy-and-data-integrity",
+          "number": "6",
+          "name": "Security, privacy and data integrity",
+          "objectives": [
+            {
+              "id": "security-privacy-and-data-integrity.1",
+              "text": "Distinguish security, privacy and integrity of data."
+            },
+            {
+              "id": "security-privacy-and-data-integrity.2",
+              "text": "Describe measures protecting systems from a single PC to a network."
+            },
+            {
+              "id": "security-privacy-and-data-integrity.3",
+              "text": "Describe threats from networks (malware, hacking, phishing, pharming) and ways to reduce them."
+            },
+            {
+              "id": "security-privacy-and-data-integrity.4",
+              "text": "Explain how validation and verification protect integrity."
+            },
+            {
+              "id": "security-privacy-and-data-integrity.5",
+              "text": "Apply validation checks (range, format, length, presence, existence, limit, check digit)."
+            },
+            {
+              "id": "security-privacy-and-data-integrity.6",
+              "text": "Apply verification during entry (visual, double entry) and transfer (parity, checksum)."
+            }
+          ]
+        },
+        {
+          "id": "ethics-and-ownership",
+          "number": "7",
+          "name": "Ethics and Ownership",
+          "objectives": [
+            {
+              "id": "ethics-and-ownership.1",
+              "text": "Explain why computing professionals need ethics and bodies like BCS and IEEE."
+            },
+            {
+              "id": "ethics-and-ownership.2",
+              "text": "Judge the effects of ethical and unethical behaviour in a scenario."
+            },
+            {
+              "id": "ethics-and-ownership.3",
+              "text": "Explain why copyright law is needed."
+            },
+            {
+              "id": "ethics-and-ownership.4",
+              "text": "Compare software licences (free, open source, shareware, commercial) and justify a choice."
+            },
+            {
+              "id": "ethics-and-ownership.5",
+              "text": "Describe AI applications and their social, economic and environmental impact."
+            }
+          ]
+        },
+        {
+          "id": "databases",
+          "number": "8",
+          "name": "Databases",
+          "objectives": [
+            {
+              "id": "databases.1",
+              "text": "Explain the weaknesses of file-based storage and how relational databases fix them."
+            },
+            {
+              "id": "databases.2",
+              "text": "Use relational terminology (keys, tuples, relationships, referential integrity, indexing) and draw E-R diagrams."
+            },
+            {
+              "id": "databases.3",
+              "text": "Normalise data to 1NF, 2NF and 3NF and justify whether tables meet 3NF."
+            },
+            {
+              "id": "databases.4",
+              "text": "Describe what a DBMS provides (data dictionary, modelling, schema, integrity, security) and its developer interface and query processor."
+            },
+            {
+              "id": "databases.5",
+              "text": "Explain that DDL changes structure and DML handles queries and maintenance, both through SQL."
+            },
+            {
+              "id": "databases.6",
+              "text": "Write SQL DDL to create databases and tables, alter them and set primary and foreign keys."
+            },
+            {
+              "id": "databases.7",
+              "text": "Write SQL DML to query and change data across up to two tables."
+            }
+          ]
+        },
+        {
+          "id": "algorithm-design-and-problem-solving",
+          "number": "9",
+          "name": "Algorithm Design and Problem-solving",
+          "objectives": [
+            {
+              "id": "algorithm-design-and-problem-solving.1",
+              "text": "Explain abstraction and build abstract models of systems."
+            },
+            {
+              "id": "algorithm-design-and-problem-solving.2",
+              "text": "Break problems down using decomposition into modules."
+            },
+            {
+              "id": "algorithm-design-and-problem-solving.3",
+              "text": "Define an algorithm and represent its data with identifier tables."
+            },
+            {
+              "id": "algorithm-design-and-problem-solving.4",
+              "text": "Write pseudocode using sequence, selection and iteration with input, process and output."
+            },
+            {
+              "id": "algorithm-design-and-problem-solving.5",
+              "text": "Convert between structured English, flowcharts and pseudocode."
+            },
+            {
+              "id": "algorithm-design-and-problem-solving.6",
+              "text": "Refine an algorithm step by step and use logic statements to define parts of it."
+            }
+          ]
+        },
+        {
+          "id": "data-types-and-structures",
+          "number": "10",
+          "name": "Data Types and Structures",
+          "objectives": [
+            {
+              "id": "data-types-and-structures.1",
+              "text": "Choose suitable data types for a problem and define records in pseudocode."
+            },
+            {
+              "id": "data-types-and-structures.2",
+              "text": "Use 1D and 2D arrays, including bounds, and process them with bubble sort and linear search."
+            },
+            {
+              "id": "data-types-and-structures.3",
+              "text": "Explain why files are needed and read and write text files in pseudocode."
+            },
+            {
+              "id": "data-types-and-structures.4",
+              "text": "Explain ADTs and the features and uses of stacks, queues and linked lists."
+            },
+            {
+              "id": "data-types-and-structures.5",
+              "text": "Add, edit and delete data in stacks, queues and linked lists."
+            },
+            {
+              "id": "data-types-and-structures.6",
+              "text": "Describe how stacks, queues and linked lists can be built using arrays."
+            }
+          ]
+        },
+        {
+          "id": "programming",
+          "number": "11",
+          "name": "Programming",
+          "objectives": [
+            {
+              "id": "programming.1",
+              "text": "Turn flowcharts or structured English into pseudocode with constants, variables, assignment and I/O."
+            },
+            {
+              "id": "programming.2",
+              "text": "Use built-in functions and library routines."
+            },
+            {
+              "id": "programming.3",
+              "text": "Write IF, CASE and the three loop types, and justify the choice of loop."
+            },
+            {
+              "id": "programming.4",
+              "text": "Define and use procedures and functions, and decide when each is appropriate."
+            },
+            {
+              "id": "programming.5",
+              "text": "Use parameters passed by value or reference and the associated terminology."
+            },
+            {
+              "id": "programming.6",
+              "text": "Write efficient pseudocode."
+            }
+          ]
+        },
+        {
+          "id": "software-development",
+          "number": "12",
+          "name": "Software Development",
+          "objectives": [
+            {
+              "id": "software-development.1",
+              "text": "Describe the development life cycle stages and compare waterfall, iterative and RAD."
+            },
+            {
+              "id": "software-development.2",
+              "text": "Design with structure charts and state-transition diagrams."
+            },
+            {
+              "id": "software-development.3",
+              "text": "Identify and correct syntax, logic and run-time errors."
+            },
+            {
+              "id": "software-development.4",
+              "text": "Select testing methods and test data (normal, abnormal, boundary) and explain test plans."
+            },
+            {
+              "id": "software-development.5",
+              "text": "Distinguish perfective, adaptive and corrective maintenance."
+            },
+            {
+              "id": "software-development.6",
+              "text": "Analyse and amend an existing program to add functionality."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "name": "A Level",
+      "level": "A2",
+      "papers": [
+        3,
+        4
+      ],
+      "topics": [
+        {
+          "id": "data-representation",
+          "number": "13",
+          "name": "Data Representation",
+          "objectives": [
+            {
+              "id": "data-representation.1",
+              "text": "Explain why user-defined types are needed and define non-composite (enumerated, pointer) and composite (set, record, class) types."
+            },
+            {
+              "id": "data-representation.2",
+              "text": "Choose serial, sequential or random file organisation and the matching access method."
+            },
+            {
+              "id": "data-representation.3",
+              "text": "Use hashing algorithms to store and find records in files."
+            },
+            {
+              "id": "data-representation.4",
+              "text": "Describe floating-point format and how mantissa and exponent sizes affect range and precision."
+            },
+            {
+              "id": "data-representation.5",
+              "text": "Convert floating-point and denary values both ways and normalise."
+            },
+            {
+              "id": "data-representation.6",
+              "text": "Explain approximation, rounding errors, overflow and underflow in binary representation."
+            }
+          ]
+        },
+        {
+          "id": "communication-and-internet-technologies",
+          "number": "14",
+          "name": "Communication and internet technologies",
+          "objectives": [
+            {
+              "id": "communication-and-internet-technologies.1",
+              "text": "Explain why protocols and layered stacks are essential."
+            },
+            {
+              "id": "communication-and-internet-technologies.2",
+              "text": "Describe the four TCP/IP layers and how a message travels between hosts."
+            },
+            {
+              "id": "communication-and-internet-technologies.3",
+              "text": "State the purposes of HTTP, FTP, POP3, IMAP, SMTP and BitTorrent."
+            },
+            {
+              "id": "communication-and-internet-technologies.4",
+              "text": "Compare circuit switching and packet switching, including the router's role."
+            }
+          ]
+        },
+        {
+          "id": "hardware-and-virtual-machines",
+          "number": "15",
+          "name": "Hardware and Virtual Machines",
+          "objectives": [
+            {
+              "id": "hardware-and-virtual-machines.1",
+              "text": "Compare RISC and CISC, including pipelining and interrupt handling."
+            },
+            {
+              "id": "hardware-and-virtual-machines.2",
+              "text": "Describe SISD, SIMD, MISD and MIMD and massively parallel computers."
+            },
+            {
+              "id": "hardware-and-virtual-machines.3",
+              "text": "Explain virtual machines with their benefits and limits."
+            },
+            {
+              "id": "hardware-and-virtual-machines.4",
+              "text": "Produce truth tables for circuits including half and full adders."
+            },
+            {
+              "id": "hardware-and-virtual-machines.5",
+              "text": "Explain SR and JK flip-flops as storage elements."
+            },
+            {
+              "id": "hardware-and-virtual-machines.6",
+              "text": "Simplify logic using Boolean algebra, De Morgan's laws and Karnaugh maps."
+            }
+          ]
+        },
+        {
+          "id": "system-software-a2",
+          "number": "16",
+          "name": "System Software",
+          "objectives": [
+            {
+              "id": "system-software-a2.1",
+              "text": "Explain how an OS maximises resource use and hides hardware complexity."
+            },
+            {
+              "id": "system-software-a2.2",
+              "text": "Describe process states and scheduling routines, and how the kernel handles interrupts."
+            },
+            {
+              "id": "system-software-a2.3",
+              "text": "Explain virtual memory, paging, segmentation, page replacement and thrashing."
+            },
+            {
+              "id": "system-software-a2.4",
+              "text": "Describe how interpreters run code and the stages of compilation."
+            },
+            {
+              "id": "system-software-a2.5",
+              "text": "Express grammar with syntax diagrams or BNF."
+            },
+            {
+              "id": "system-software-a2.6",
+              "text": "Evaluate expressions with Reverse Polish Notation."
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "number": "17",
+          "name": "Security",
+          "objectives": [
+            {
+              "id": "security.1",
+              "text": "Explain symmetric and asymmetric encryption and how keys give privacy and verification."
+            },
+            {
+              "id": "security.2",
+              "text": "Explain quantum cryptography's purpose, benefits and drawbacks."
+            },
+            {
+              "id": "security.3",
+              "text": "Describe SSL/TLS and when to use it."
+            },
+            {
+              "id": "security.4",
+              "text": "Explain how digital certificates are obtained and used for digital signatures."
+            }
+          ]
+        },
+        {
+          "id": "artificial-intelligence",
+          "number": "18",
+          "name": "Artificial Intelligence (AI)",
+          "objectives": [
+            {
+              "id": "artificial-intelligence.1",
+              "text": "Explain how graphs support AI and trace A* and Dijkstra's searches."
+            },
+            {
+              "id": "artificial-intelligence.2",
+              "text": "Explain how neural networks help machine learning."
+            },
+            {
+              "id": "artificial-intelligence.3",
+              "text": "Compare deep, machine (supervised/unsupervised) and reinforcement learning."
+            },
+            {
+              "id": "artificial-intelligence.4",
+              "text": "Explain back propagation and regression in machine learning."
+            }
+          ]
+        },
+        {
+          "id": "computational-thinking-and-problem-solving",
+          "number": "19",
+          "name": "Computational thinking and Problem-solving",
+          "objectives": [
+            {
+              "id": "computational-thinking-and-problem-solving.1",
+              "text": "Write and compare linear and binary search, including when binary search applies."
+            },
+            {
+              "id": "computational-thinking-and-problem-solving.2",
+              "text": "Write insertion and bubble sort and explain what affects their performance."
+            },
+            {
+              "id": "computational-thinking-and-problem-solving.3",
+              "text": "Write algorithms to find, insert and delete items in stacks, queues, linked lists and binary trees."
+            },
+            {
+              "id": "computational-thinking-and-problem-solving.4",
+              "text": "Describe graphs as ADTs and build ADTs (including dictionaries) from other types."
+            },
+            {
+              "id": "computational-thinking-and-problem-solving.5",
+              "text": "Compare algorithms using time and space, including Big O notation."
+            },
+            {
+              "id": "computational-thinking-and-problem-solving.6",
+              "text": "Write and trace recursive algorithms, judge when recursion helps, and explain how compilers handle it with stacks."
+            }
+          ]
+        },
+        {
+          "id": "further-programming",
+          "number": "20",
+          "name": "Further Programming",
+          "objectives": [
+            {
+              "id": "further-programming.1",
+              "text": "Explain what a programming paradigm is."
+            },
+            {
+              "id": "further-programming.2",
+              "text": "Write low-level and imperative code using the various addressing modes and procedures."
+            },
+            {
+              "id": "further-programming.3",
+              "text": "Use OOP terminology and design and write classes using inheritance, polymorphism and encapsulation."
+            },
+            {
+              "id": "further-programming.4",
+              "text": "Write declarative facts and rules to satisfy a goal."
+            },
+            {
+              "id": "further-programming.5",
+              "text": "Perform file operations (open, close, read and write records) on serial, sequential and random files."
+            },
+            {
+              "id": "further-programming.6",
+              "text": "Explain and write exception handling."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1251 @@
+{
+  "subjectId": "mathematics",
+  "code": "9709",
+  "name": "Mathematics",
+  "version": "2026–2027",
+  "pdfUrl": "https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf",
+  "components": [
+    {
+      "id": "p1",
+      "name": "Pure Mathematics 1",
+      "level": "AS",
+      "papers": [
+        1
+      ],
+      "topics": [
+        {
+          "id": "p1-quadratics",
+          "number": "1.1",
+          "name": "Quadratics",
+          "objectives": [
+            {
+              "id": "p1-quadratics.1",
+              "text": "Solve quadratic equations by factorising, completing the square or using the formula"
+            },
+            {
+              "id": "p1-quadratics.2",
+              "text": "Complete the square and use it to find the vertex and line of symmetry"
+            },
+            {
+              "id": "p1-quadratics.3",
+              "text": "Sketch quadratic graphs, showing intercepts and turning point"
+            },
+            {
+              "id": "p1-quadratics.4",
+              "text": "Use the discriminant to decide whether a quadratic has two, one or no real roots"
+            },
+            {
+              "id": "p1-quadratics.5",
+              "text": "Solve quadratic inequalities"
+            },
+            {
+              "id": "p1-quadratics.6",
+              "text": "Solve simultaneous equations where one is linear and one is quadratic"
+            },
+            {
+              "id": "p1-quadratics.7",
+              "text": "Solve equations that reduce to quadratics, such as $x^4-5x^2+4=0$ or ones in $\\sqrt{x}$"
+            },
+            {
+              "id": "p1-quadratics.8",
+              "text": "Find conditions on a parameter for a line to cross, touch or miss a curve"
+            }
+          ]
+        },
+        {
+          "id": "p1-functions",
+          "number": "1.2",
+          "name": "Functions",
+          "objectives": [
+            {
+              "id": "p1-functions.1",
+              "text": "Use function notation, domain and range"
+            },
+            {
+              "id": "p1-functions.2",
+              "text": "Decide whether a function is one-one and find its inverse"
+            },
+            {
+              "id": "p1-functions.3",
+              "text": "Form composite functions and understand the order of application"
+            },
+            {
+              "id": "p1-functions.4",
+              "text": "Find the inverse of a function and relate its graph to the original by reflection in $y=x$"
+            },
+            {
+              "id": "p1-functions.5",
+              "text": "Restrict a domain so that a function has an inverse"
+            },
+            {
+              "id": "p1-functions.6",
+              "text": "Describe transformations: translations, reflections and stretches of graphs"
+            },
+            {
+              "id": "p1-functions.7",
+              "text": "Use the effect of a transformation to write the equation of the new graph"
+            }
+          ]
+        },
+        {
+          "id": "p1-coordinate-geometry",
+          "number": "1.3",
+          "name": "Coordinate geometry",
+          "objectives": [
+            {
+              "id": "p1-coordinate-geometry.1",
+              "text": "Find the gradient, length and midpoint of a line segment"
+            },
+            {
+              "id": "p1-coordinate-geometry.2",
+              "text": "Find the equation of a straight line given a point and gradient, or two points"
+            },
+            {
+              "id": "p1-coordinate-geometry.3",
+              "text": "Use the conditions for parallel and perpendicular lines"
+            },
+            {
+              "id": "p1-coordinate-geometry.4",
+              "text": "Interpret and use the equation of a circle, $(x-a)^2+(y-b)^2=r^2$"
+            },
+            {
+              "id": "p1-coordinate-geometry.5",
+              "text": "Find the centre and radius of a circle from its expanded equation"
+            },
+            {
+              "id": "p1-coordinate-geometry.6",
+              "text": "Use circle properties: tangent perpendicular to radius, angle in a semicircle, perpendicular bisector of a chord"
+            },
+            {
+              "id": "p1-coordinate-geometry.7",
+              "text": "Find where a line meets a curve or circle and decide whether it is a tangent"
+            },
+            {
+              "id": "p1-coordinate-geometry.8",
+              "text": "Transform a relationship of the form $y=ax^n$ or $y=ab^x$ into a straight line and find constants from its graph"
+            }
+          ]
+        },
+        {
+          "id": "p1-circular-measure",
+          "number": "1.4",
+          "name": "Circular measure",
+          "objectives": [
+            {
+              "id": "p1-circular-measure.1",
+              "text": "Convert between degrees and radians"
+            },
+            {
+              "id": "p1-circular-measure.2",
+              "text": "Calculate arc length using $s=r\\theta$"
+            },
+            {
+              "id": "p1-circular-measure.3",
+              "text": "Calculate sector area using $A=\\tfrac12 r^2\\theta$"
+            },
+            {
+              "id": "p1-circular-measure.4",
+              "text": "Solve problems combining sectors, triangles and segments"
+            }
+          ]
+        },
+        {
+          "id": "p1-trigonometry",
+          "number": "1.5",
+          "name": "Trigonometry",
+          "objectives": [
+            {
+              "id": "p1-trigonometry.1",
+              "text": "Sketch and describe the graphs of sine, cosine and tangent, including period and symmetry"
+            },
+            {
+              "id": "p1-trigonometry.2",
+              "text": "Use exact values of trig ratios for $30^\\circ$, $45^\\circ$ and $60^\\circ$"
+            },
+            {
+              "id": "p1-trigonometry.3",
+              "text": "Use the identities $\\tan\\theta=\\sin\\theta/\\cos\\theta$ and $\\sin^2\\theta+\\cos^2\\theta=1$"
+            },
+            {
+              "id": "p1-trigonometry.4",
+              "text": "Solve trig equations in a given interval, in degrees or radians"
+            },
+            {
+              "id": "p1-trigonometry.5",
+              "text": "Solve equations that need an identity or a quadratic in $\\sin$, $\\cos$ or $\\tan$"
+            },
+            {
+              "id": "p1-trigonometry.6",
+              "text": "Use transformations of trig graphs, such as stretches and translations"
+            },
+            {
+              "id": "p1-trigonometry.7",
+              "text": "Find the number of solutions of a trig equation from its graph"
+            }
+          ]
+        },
+        {
+          "id": "p1-series",
+          "number": "1.6",
+          "name": "Series",
+          "objectives": [
+            {
+              "id": "p1-series.1",
+              "text": "Expand $(a+b)^n$ for positive integer $n$ using the binomial theorem"
+            },
+            {
+              "id": "p1-series.2",
+              "text": "Use $\\binom{n}{r}$ notation and find specific terms or coefficients"
+            },
+            {
+              "id": "p1-series.3",
+              "text": "Use the nth term and sum formulae for arithmetic progressions"
+            },
+            {
+              "id": "p1-series.4",
+              "text": "Use the nth term and sum formulae for geometric progressions"
+            },
+            {
+              "id": "p1-series.5",
+              "text": "Find the sum to infinity of a convergent geometric series, when $|r|<1$"
+            },
+            {
+              "id": "p1-series.6",
+              "text": "Solve applied problems involving arithmetic and geometric progressions"
+            }
+          ]
+        },
+        {
+          "id": "p1-differentiation",
+          "number": "1.7",
+          "name": "Differentiation",
+          "objectives": [
+            {
+              "id": "p1-differentiation.1",
+              "text": "Understand the derivative as the gradient of a curve and a rate of change"
+            },
+            {
+              "id": "p1-differentiation.2",
+              "text": "Differentiate powers of $x$ and sums of such terms, including fractional and negative powers"
+            },
+            {
+              "id": "p1-differentiation.3",
+              "text": "Use the chain rule for functions of a function"
+            },
+            {
+              "id": "p1-differentiation.4",
+              "text": "Find equations of tangents and normals"
+            },
+            {
+              "id": "p1-differentiation.5",
+              "text": "Find second derivatives and use them to classify stationary points"
+            },
+            {
+              "id": "p1-differentiation.6",
+              "text": "Locate stationary points and determine whether each is a maximum or minimum"
+            },
+            {
+              "id": "p1-differentiation.7",
+              "text": "Find where a function is increasing or decreasing"
+            },
+            {
+              "id": "p1-differentiation.8",
+              "text": "Solve optimisation and connected rates of change problems"
+            }
+          ]
+        },
+        {
+          "id": "p1-integration",
+          "number": "1.8",
+          "name": "Integration",
+          "objectives": [
+            {
+              "id": "p1-integration.1",
+              "text": "Understand integration as the reverse of differentiation"
+            },
+            {
+              "id": "p1-integration.2",
+              "text": "Integrate powers of $x$, including $(ax+b)^n$"
+            },
+            {
+              "id": "p1-integration.3",
+              "text": "Find a constant of integration from a given point on the curve"
+            },
+            {
+              "id": "p1-integration.4",
+              "text": "Evaluate definite integrals"
+            },
+            {
+              "id": "p1-integration.5",
+              "text": "Find the area under a curve and between a curve and a line"
+            },
+            {
+              "id": "p1-integration.6",
+              "text": "Find volumes of revolution about the $x$- or $y$-axis"
+            },
+            {
+              "id": "p1-integration.7",
+              "text": "Combine integration with other topics, such as finding the curve from its gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "Pure Mathematics 2",
+      "level": "AS",
+      "papers": [
+        2
+      ],
+      "topics": [
+        {
+          "id": "p2-algebra",
+          "number": "2.1",
+          "name": "Algebra",
+          "objectives": [
+            {
+              "id": "p2-algebra.1",
+              "text": "Solve equations and inequalities involving the modulus function"
+            },
+            {
+              "id": "p2-algebra.2",
+              "text": "Use the modulus function in graphs and inequalities such as $|x-a|<b$"
+            },
+            {
+              "id": "p2-algebra.3",
+              "text": "Divide polynomials and use the factor theorem"
+            },
+            {
+              "id": "p2-algebra.4",
+              "text": "Use the remainder theorem to find remainders and unknown coefficients"
+            },
+            {
+              "id": "p2-algebra.5",
+              "text": "Factorise and solve polynomial equations by finding factors"
+            }
+          ]
+        },
+        {
+          "id": "p2-logarithmic-and-exponential-functions",
+          "number": "2.2",
+          "name": "Logarithmic and exponential functions",
+          "objectives": [
+            {
+              "id": "p2-logarithmic-and-exponential-functions.1",
+              "text": "Understand $y=a^x$ and $y=\\log_a x$ as inverse functions and sketch their graphs"
+            },
+            {
+              "id": "p2-logarithmic-and-exponential-functions.2",
+              "text": "Use the laws of logarithms to simplify and solve equations"
+            },
+            {
+              "id": "p2-logarithmic-and-exponential-functions.3",
+              "text": "Use and solve exponential equations such as $a^x=b$ by taking logarithms"
+            },
+            {
+              "id": "p2-logarithmic-and-exponential-functions.4",
+              "text": "Understand $e^x$ and $\\ln x$ and their graphs"
+            },
+            {
+              "id": "p2-logarithmic-and-exponential-functions.5",
+              "text": "Use logarithms to turn $y=ax^n$ and $y=ab^x$ into linear form and read off constants"
+            },
+            {
+              "id": "p2-logarithmic-and-exponential-functions.6",
+              "text": "Solve exponential growth and decay problems"
+            }
+          ]
+        },
+        {
+          "id": "p2-trigonometry",
+          "number": "2.3",
+          "name": "Trigonometry",
+          "objectives": [
+            {
+              "id": "p2-trigonometry.1",
+              "text": "Use the reciprocal functions $\\sec$, $\\csc$ and $\\cot$ and their graphs"
+            },
+            {
+              "id": "p2-trigonometry.2",
+              "text": "Use the identities $1+\\tan^2\\theta=\\sec^2\\theta$ and $1+\\cot^2\\theta=\\csc^2\\theta$"
+            },
+            {
+              "id": "p2-trigonometry.3",
+              "text": "Use the compound angle formulae for $\\sin(A\\pm B)$, $\\cos(A\\pm B)$ and $\\tan(A\\pm B)$"
+            },
+            {
+              "id": "p2-trigonometry.4",
+              "text": "Use the double angle formulae"
+            },
+            {
+              "id": "p2-trigonometry.5",
+              "text": "Write $a\\sin\\theta+b\\cos\\theta$ as $R\\sin(\\theta\\pm\\alpha)$ or $R\\cos(\\theta\\pm\\alpha)$"
+            },
+            {
+              "id": "p2-trigonometry.6",
+              "text": "Use the $R$-form to solve equations and find maximum and minimum values"
+            }
+          ]
+        },
+        {
+          "id": "p2-differentiation",
+          "number": "2.4",
+          "name": "Differentiation",
+          "objectives": [
+            {
+              "id": "p2-differentiation.1",
+              "text": "Differentiate $e^{kx}$ and $\\ln x$"
+            },
+            {
+              "id": "p2-differentiation.2",
+              "text": "Differentiate $\\sin$, $\\cos$ and $\\tan$ of $kx$"
+            },
+            {
+              "id": "p2-differentiation.3",
+              "text": "Use the product rule"
+            },
+            {
+              "id": "p2-differentiation.4",
+              "text": "Use the quotient rule"
+            },
+            {
+              "id": "p2-differentiation.5",
+              "text": "Differentiate composite functions combining the standard rules"
+            },
+            {
+              "id": "p2-differentiation.6",
+              "text": "Differentiate functions given parametrically or implicitly"
+            }
+          ]
+        },
+        {
+          "id": "p2-integration",
+          "number": "2.5",
+          "name": "Integration",
+          "objectives": [
+            {
+              "id": "p2-integration.1",
+              "text": "Integrate $e^{kx}$ and $1/x$"
+            },
+            {
+              "id": "p2-integration.2",
+              "text": "Integrate $\\sin$, $\\cos$ and $\\sec^2$ of $kx+c$"
+            },
+            {
+              "id": "p2-integration.3",
+              "text": "Use trig identities to integrate expressions such as $\\sin^2 x$"
+            },
+            {
+              "id": "p2-integration.4",
+              "text": "Integrate functions of the form $f(ax+b)$ by recognition"
+            },
+            {
+              "id": "p2-integration.5",
+              "text": "Evaluate areas involving exponential, logarithmic and trig functions"
+            }
+          ]
+        },
+        {
+          "id": "p2-numerical-solution-of-equations",
+          "number": "2.6",
+          "name": "Numerical solution of equations",
+          "objectives": [
+            {
+              "id": "p2-numerical-solution-of-equations.1",
+              "text": "Show that a root lies in an interval using a sign change"
+            },
+            {
+              "id": "p2-numerical-solution-of-equations.2",
+              "text": "Understand why a sign change may not guarantee a root, such as at discontinuities"
+            },
+            {
+              "id": "p2-numerical-solution-of-equations.3",
+              "text": "Rearrange an equation into the form $x=g(x)$"
+            },
+            {
+              "id": "p2-numerical-solution-of-equations.4",
+              "text": "Use iteration $x_{n+1}=g(x_n)$ to approach a root"
+            },
+            {
+              "id": "p2-numerical-solution-of-equations.5",
+              "text": "Use a given iterative formula and state results to the required accuracy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "Pure Mathematics 3",
+      "level": "A2",
+      "papers": [
+        3
+      ],
+      "topics": [
+        {
+          "id": "p3-algebra",
+          "number": "3.1",
+          "name": "Algebra",
+          "objectives": [
+            {
+              "id": "p3-algebra.1",
+              "text": "Solve more complex modulus equations and inequalities, including graphical methods"
+            },
+            {
+              "id": "p3-algebra.2",
+              "text": "Divide polynomials and apply the factor and remainder theorems"
+            },
+            {
+              "id": "p3-algebra.3",
+              "text": "Split rational functions into partial fractions with linear factors"
+            },
+            {
+              "id": "p3-algebra.4",
+              "text": "Handle partial fractions with repeated or quadratic factors"
+            },
+            {
+              "id": "p3-algebra.5",
+              "text": "Expand $(1+x)^n$ for rational $n$ and state the range of validity"
+            },
+            {
+              "id": "p3-algebra.6",
+              "text": "Use binomial expansions to approximate expressions and find coefficients"
+            }
+          ]
+        },
+        {
+          "id": "p3-logarithmic-and-exponential-functions",
+          "number": "3.2",
+          "name": "Logarithmic and exponential functions",
+          "objectives": [
+            {
+              "id": "p3-logarithmic-and-exponential-functions.1",
+              "text": "Use logarithms and exponentials to solve equations and inequalities"
+            },
+            {
+              "id": "p3-logarithmic-and-exponential-functions.2",
+              "text": "Linearise non-linear data and use graphs to find unknown constants"
+            },
+            {
+              "id": "p3-logarithmic-and-exponential-functions.3",
+              "text": "Model growth and decay with exponential functions"
+            },
+            {
+              "id": "p3-logarithmic-and-exponential-functions.4",
+              "text": "Interpret the parameters of an exponential model in context"
+            }
+          ]
+        },
+        {
+          "id": "p3-trigonometry",
+          "number": "3.3",
+          "name": "Trigonometry",
+          "objectives": [
+            {
+              "id": "p3-trigonometry.1",
+              "text": "Use inverse trig functions $\\arcsin$, $\\arccos$ and $\\arctan$ with their domains and ranges"
+            },
+            {
+              "id": "p3-trigonometry.2",
+              "text": "Prove and apply trig identities using compound and double angle formulae"
+            },
+            {
+              "id": "p3-trigonometry.3",
+              "text": "Use the $R$-form to solve equations and find extreme values"
+            },
+            {
+              "id": "p3-trigonometry.4",
+              "text": "Solve more demanding trig equations by combining identities"
+            },
+            {
+              "id": "p3-trigonometry.5",
+              "text": "Use factor formulae for sums and products of sines and cosines"
+            }
+          ]
+        },
+        {
+          "id": "p3-differentiation",
+          "number": "3.4",
+          "name": "Differentiation",
+          "objectives": [
+            {
+              "id": "p3-differentiation.1",
+              "text": "Use the product, quotient and chain rules together"
+            },
+            {
+              "id": "p3-differentiation.2",
+              "text": "Differentiate $a^x$, $e^x$, $\\ln x$ and trig functions"
+            },
+            {
+              "id": "p3-differentiation.3",
+              "text": "Differentiate parametric and implicitly defined curves"
+            },
+            {
+              "id": "p3-differentiation.4",
+              "text": "Find tangents, normals and stationary points for such curves"
+            },
+            {
+              "id": "p3-differentiation.5",
+              "text": "Use derivatives for rates of change and optimisation"
+            },
+            {
+              "id": "p3-differentiation.6",
+              "text": "Differentiate inverse trig functions"
+            }
+          ]
+        },
+        {
+          "id": "p3-integration",
+          "number": "3.5",
+          "name": "Integration",
+          "objectives": [
+            {
+              "id": "p3-integration.1",
+              "text": "Integrate standard exponential, logarithmic and trig functions"
+            },
+            {
+              "id": "p3-integration.2",
+              "text": "Integrate by substitution"
+            },
+            {
+              "id": "p3-integration.3",
+              "text": "Integrate by parts"
+            },
+            {
+              "id": "p3-integration.4",
+              "text": "Integrate rational functions using partial fractions"
+            },
+            {
+              "id": "p3-integration.5",
+              "text": "Use trig identities to integrate trig expressions"
+            },
+            {
+              "id": "p3-integration.6",
+              "text": "Find areas and volumes of revolution using integration"
+            },
+            {
+              "id": "p3-integration.7",
+              "text": "Use the trapezium rule to estimate integrals"
+            }
+          ]
+        },
+        {
+          "id": "p3-numerical-solution-of-equations",
+          "number": "3.6",
+          "name": "Numerical solution of equations",
+          "objectives": [
+            {
+              "id": "p3-numerical-solution-of-equations.1",
+              "text": "Locate roots by sign change and decide whether a root exists in an interval"
+            },
+            {
+              "id": "p3-numerical-solution-of-equations.2",
+              "text": "Rearrange equations into iterative form $x=g(x)$"
+            },
+            {
+              "id": "p3-numerical-solution-of-equations.3",
+              "text": "Use iterative formulae to find roots to a given accuracy"
+            },
+            {
+              "id": "p3-numerical-solution-of-equations.4",
+              "text": "Understand convergence of iteration and when it works"
+            },
+            {
+              "id": "p3-numerical-solution-of-equations.5",
+              "text": "Interpret iteration graphically as cobweb or staircase diagrams"
+            }
+          ]
+        },
+        {
+          "id": "p3-vectors",
+          "number": "3.7",
+          "name": "Vectors",
+          "objectives": [
+            {
+              "id": "p3-vectors.1",
+              "text": "Use position vectors and vector notation in 2D and 3D"
+            },
+            {
+              "id": "p3-vectors.2",
+              "text": "Add, subtract and scale vectors, and find magnitudes"
+            },
+            {
+              "id": "p3-vectors.3",
+              "text": "Use the scalar product to find angles between vectors"
+            },
+            {
+              "id": "p3-vectors.4",
+              "text": "Write the vector equation of a line"
+            },
+            {
+              "id": "p3-vectors.5",
+              "text": "Decide whether two lines are parallel, intersecting or skew"
+            },
+            {
+              "id": "p3-vectors.6",
+              "text": "Find the point of intersection of two lines"
+            },
+            {
+              "id": "p3-vectors.7",
+              "text": "Find the angle between two lines and the distance from a point to a line"
+            }
+          ]
+        },
+        {
+          "id": "p3-differential-equations",
+          "number": "3.8",
+          "name": "Differential equations",
+          "objectives": [
+            {
+              "id": "p3-differential-equations.1",
+              "text": "Form a differential equation from a description of a situation"
+            },
+            {
+              "id": "p3-differential-equations.2",
+              "text": "Solve first-order equations by separating the variables"
+            },
+            {
+              "id": "p3-differential-equations.3",
+              "text": "Find particular solutions using given conditions"
+            },
+            {
+              "id": "p3-differential-equations.4",
+              "text": "Interpret solutions in context, such as growth, cooling or population"
+            }
+          ]
+        },
+        {
+          "id": "p3-complex-numbers",
+          "number": "3.9",
+          "name": "Complex numbers",
+          "objectives": [
+            {
+              "id": "p3-complex-numbers.1",
+              "text": "Add, subtract, multiply and divide complex numbers in Cartesian form"
+            },
+            {
+              "id": "p3-complex-numbers.2",
+              "text": "Find real and imaginary parts, the conjugate and the modulus and argument"
+            },
+            {
+              "id": "p3-complex-numbers.3",
+              "text": "Represent complex numbers on an Argand diagram"
+            },
+            {
+              "id": "p3-complex-numbers.4",
+              "text": "Write complex numbers in modulus-argument (polar) form"
+            },
+            {
+              "id": "p3-complex-numbers.5",
+              "text": "Solve quadratic equations with complex roots"
+            },
+            {
+              "id": "p3-complex-numbers.6",
+              "text": "Use conjugate roots of polynomials with real coefficients"
+            },
+            {
+              "id": "p3-complex-numbers.7",
+              "text": "Sketch loci such as $|z-a|=r$, $\\arg(z-a)=\\theta$ and $|z-a|=|z-b|$"
+            },
+            {
+              "id": "p3-complex-numbers.8",
+              "text": "Use loci and regions to answer geometric questions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1",
+      "name": "Mechanics",
+      "level": "AS",
+      "papers": [
+        4
+      ],
+      "topics": [
+        {
+          "id": "m1-forces-and-equilibrium",
+          "number": "4.1",
+          "name": "Forces and equilibrium",
+          "objectives": [
+            {
+              "id": "m1-forces-and-equilibrium.1",
+              "text": "Identify forces on a body and draw force diagrams"
+            },
+            {
+              "id": "m1-forces-and-equilibrium.2",
+              "text": "Resolve forces into components"
+            },
+            {
+              "id": "m1-forces-and-equilibrium.3",
+              "text": "Find the resultant of concurrent forces"
+            },
+            {
+              "id": "m1-forces-and-equilibrium.4",
+              "text": "Use equilibrium of a particle to solve for unknown forces"
+            },
+            {
+              "id": "m1-forces-and-equilibrium.5",
+              "text": "Use friction with the limiting friction model $F\\le\\mu R$"
+            },
+            {
+              "id": "m1-forces-and-equilibrium.6",
+              "text": "Solve problems on inclined planes and with several surfaces"
+            }
+          ]
+        },
+        {
+          "id": "m1-kinematics-of-motion-in-a-straight-line",
+          "number": "4.2",
+          "name": "Kinematics of motion in a straight line",
+          "objectives": [
+            {
+              "id": "m1-kinematics-of-motion-in-a-straight-line.1",
+              "text": "Sketch and interpret displacement-time and velocity-time graphs"
+            },
+            {
+              "id": "m1-kinematics-of-motion-in-a-straight-line.2",
+              "text": "Use area under a velocity-time graph for displacement and gradient for acceleration"
+            },
+            {
+              "id": "m1-kinematics-of-motion-in-a-straight-line.3",
+              "text": "Use the constant acceleration (suvat) equations"
+            },
+            {
+              "id": "m1-kinematics-of-motion-in-a-straight-line.4",
+              "text": "Solve problems involving vertical motion under gravity"
+            },
+            {
+              "id": "m1-kinematics-of-motion-in-a-straight-line.5",
+              "text": "Use calculus to link displacement, velocity and acceleration for variable acceleration"
+            },
+            {
+              "id": "m1-kinematics-of-motion-in-a-straight-line.6",
+              "text": "Solve problems where motion has several stages"
+            }
+          ]
+        },
+        {
+          "id": "m1-momentum",
+          "number": "4.3",
+          "name": "Momentum",
+          "objectives": [
+            {
+              "id": "m1-momentum.1",
+              "text": "Calculate momentum as mass times velocity"
+            },
+            {
+              "id": "m1-momentum.2",
+              "text": "Use conservation of momentum in direct collisions of two particles"
+            },
+            {
+              "id": "m1-momentum.3",
+              "text": "Handle collisions where particles coalesce or rebound"
+            },
+            {
+              "id": "m1-momentum.4",
+              "text": "Apply momentum principles in one dimension with correct sign conventions"
+            }
+          ]
+        },
+        {
+          "id": "m1-newtons-laws-of-motion",
+          "number": "4.4",
+          "name": "Newton's laws of motion",
+          "objectives": [
+            {
+              "id": "m1-newtons-laws-of-motion.1",
+              "text": "Apply Newton's second law $F=ma$ to a particle"
+            },
+            {
+              "id": "m1-newtons-laws-of-motion.2",
+              "text": "Use Newton's third law for action and reaction"
+            },
+            {
+              "id": "m1-newtons-laws-of-motion.3",
+              "text": "Model connected particles with strings over pulleys"
+            },
+            {
+              "id": "m1-newtons-laws-of-motion.4",
+              "text": "Analyse motion on horizontal and inclined surfaces, with and without friction"
+            },
+            {
+              "id": "m1-newtons-laws-of-motion.5",
+              "text": "Solve problems on lifts and towing, treating strings as light and inextensible"
+            },
+            {
+              "id": "m1-newtons-laws-of-motion.6",
+              "text": "Combine dynamics with kinematic equations"
+            }
+          ]
+        },
+        {
+          "id": "m1-energy-work-and-power",
+          "number": "4.5",
+          "name": "Energy, work and power",
+          "objectives": [
+            {
+              "id": "m1-energy-work-and-power.1",
+              "text": "Calculate work done by a force"
+            },
+            {
+              "id": "m1-energy-work-and-power.2",
+              "text": "Calculate gravitational potential energy and kinetic energy"
+            },
+            {
+              "id": "m1-energy-work-and-power.3",
+              "text": "Use the work-energy principle, including friction"
+            },
+            {
+              "id": "m1-energy-work-and-power.4",
+              "text": "Use conservation of mechanical energy"
+            },
+            {
+              "id": "m1-energy-work-and-power.5",
+              "text": "Use power $P=Fv$ for vehicles moving at constant or varying speed"
+            },
+            {
+              "id": "m1-energy-work-and-power.6",
+              "text": "Solve problems involving slopes, resistances and acceleration of vehicles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s1",
+      "name": "Probability & Statistics 1",
+      "level": "AS",
+      "papers": [
+        5
+      ],
+      "topics": [
+        {
+          "id": "s1-representation-of-data",
+          "number": "5.1",
+          "name": "Representation of data",
+          "objectives": [
+            {
+              "id": "s1-representation-of-data.1",
+              "text": "Select suitable ways to display data"
+            },
+            {
+              "id": "s1-representation-of-data.2",
+              "text": "Draw and interpret stem-and-leaf diagrams and box-and-whisker plots"
+            },
+            {
+              "id": "s1-representation-of-data.3",
+              "text": "Draw and interpret histograms with equal or unequal class widths"
+            },
+            {
+              "id": "s1-representation-of-data.4",
+              "text": "Draw and read cumulative frequency graphs"
+            },
+            {
+              "id": "s1-representation-of-data.5",
+              "text": "Find median, quartiles, percentiles and interquartile range"
+            },
+            {
+              "id": "s1-representation-of-data.6",
+              "text": "Calculate mean, mode and median, including from grouped data"
+            },
+            {
+              "id": "s1-representation-of-data.7",
+              "text": "Calculate variance and standard deviation"
+            },
+            {
+              "id": "s1-representation-of-data.8",
+              "text": "Compare data sets using measures of location and spread"
+            }
+          ]
+        },
+        {
+          "id": "s1-permutations-and-combinations",
+          "number": "5.2",
+          "name": "Permutations and combinations",
+          "objectives": [
+            {
+              "id": "s1-permutations-and-combinations.1",
+              "text": "Count arrangements using factorials"
+            },
+            {
+              "id": "s1-permutations-and-combinations.2",
+              "text": "Use permutations ${}^nP_r$ for ordered selections"
+            },
+            {
+              "id": "s1-permutations-and-combinations.3",
+              "text": "Use combinations ${}^nC_r$ for unordered selections"
+            },
+            {
+              "id": "s1-permutations-and-combinations.4",
+              "text": "Handle arrangements with restrictions, such as items together or apart"
+            },
+            {
+              "id": "s1-permutations-and-combinations.5",
+              "text": "Handle arrangements with repeated items"
+            },
+            {
+              "id": "s1-permutations-and-combinations.6",
+              "text": "Use counting methods in probability questions"
+            }
+          ]
+        },
+        {
+          "id": "s1-probability",
+          "number": "5.3",
+          "name": "Probability",
+          "objectives": [
+            {
+              "id": "s1-probability.1",
+              "text": "Calculate probabilities using equally likely outcomes"
+            },
+            {
+              "id": "s1-probability.2",
+              "text": "Use the addition rule for mutually exclusive and non-exclusive events"
+            },
+            {
+              "id": "s1-probability.3",
+              "text": "Use the multiplication rule for independent events"
+            },
+            {
+              "id": "s1-probability.4",
+              "text": "Use conditional probability"
+            },
+            {
+              "id": "s1-probability.5",
+              "text": "Use tree diagrams, Venn diagrams and tables"
+            },
+            {
+              "id": "s1-probability.6",
+              "text": "Decide whether events are independent or mutually exclusive"
+            }
+          ]
+        },
+        {
+          "id": "s1-discrete-random-variables",
+          "number": "5.4",
+          "name": "Discrete random variables",
+          "objectives": [
+            {
+              "id": "s1-discrete-random-variables.1",
+              "text": "Build probability distribution tables and check they sum to 1"
+            },
+            {
+              "id": "s1-discrete-random-variables.2",
+              "text": "Calculate expectation $E(X)$"
+            },
+            {
+              "id": "s1-discrete-random-variables.3",
+              "text": "Calculate variance $\\mathrm{Var}(X)$"
+            },
+            {
+              "id": "s1-discrete-random-variables.4",
+              "text": "Use the binomial distribution $B(n,p)$ and its conditions"
+            },
+            {
+              "id": "s1-discrete-random-variables.5",
+              "text": "Calculate binomial probabilities, mean and variance"
+            },
+            {
+              "id": "s1-discrete-random-variables.6",
+              "text": "Use the geometric distribution and its mean"
+            }
+          ]
+        },
+        {
+          "id": "s1-the-normal-distribution",
+          "number": "5.5",
+          "name": "The normal distribution",
+          "objectives": [
+            {
+              "id": "s1-the-normal-distribution.1",
+              "text": "Describe the shape and properties of a normal distribution"
+            },
+            {
+              "id": "s1-the-normal-distribution.2",
+              "text": "Standardise using $z=(x-\\mu)/\\sigma$ and use normal tables"
+            },
+            {
+              "id": "s1-the-normal-distribution.3",
+              "text": "Calculate probabilities for any normal variable"
+            },
+            {
+              "id": "s1-the-normal-distribution.4",
+              "text": "Find an unknown value or parameter from a given probability"
+            },
+            {
+              "id": "s1-the-normal-distribution.5",
+              "text": "Use the normal distribution as an approximation to the binomial with a continuity correction"
+            },
+            {
+              "id": "s1-the-normal-distribution.6",
+              "text": "Solve modelling problems with the normal distribution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "name": "Probability & Statistics 2",
+      "level": "A2",
+      "papers": [
+        6
+      ],
+      "topics": [
+        {
+          "id": "s2-the-poisson-distribution",
+          "number": "6.1",
+          "name": "The Poisson distribution",
+          "objectives": [
+            {
+              "id": "s2-the-poisson-distribution.1",
+              "text": "State when a Poisson model is suitable"
+            },
+            {
+              "id": "s2-the-poisson-distribution.2",
+              "text": "Calculate Poisson probabilities, mean and variance"
+            },
+            {
+              "id": "s2-the-poisson-distribution.3",
+              "text": "Use the property that Poisson variables add, for sums of independent variables"
+            },
+            {
+              "id": "s2-the-poisson-distribution.4",
+              "text": "Use the Poisson distribution as an approximation to the binomial"
+            },
+            {
+              "id": "s2-the-poisson-distribution.5",
+              "text": "Use the normal approximation to the Poisson for large mean"
+            }
+          ]
+        },
+        {
+          "id": "s2-linear-combinations-of-random-variables",
+          "number": "6.2",
+          "name": "Linear combinations of random variables",
+          "objectives": [
+            {
+              "id": "s2-linear-combinations-of-random-variables.1",
+              "text": "Find expectation and variance of $aX+b$"
+            },
+            {
+              "id": "s2-linear-combinations-of-random-variables.2",
+              "text": "Find expectation and variance of $aX+bY$ for independent variables"
+            },
+            {
+              "id": "s2-linear-combinations-of-random-variables.3",
+              "text": "Use the fact that linear combinations of independent normals are normal"
+            },
+            {
+              "id": "s2-linear-combinations-of-random-variables.4",
+              "text": "Solve problems with sums and differences of normal variables"
+            }
+          ]
+        },
+        {
+          "id": "s2-continuous-random-variables",
+          "number": "6.3",
+          "name": "Continuous random variables",
+          "objectives": [
+            {
+              "id": "s2-continuous-random-variables.1",
+              "text": "Use a probability density function and check it integrates to 1"
+            },
+            {
+              "id": "s2-continuous-random-variables.2",
+              "text": "Find probabilities as areas under the pdf"
+            },
+            {
+              "id": "s2-continuous-random-variables.3",
+              "text": "Calculate mean and variance using integration"
+            },
+            {
+              "id": "s2-continuous-random-variables.4",
+              "text": "Find the median and other quartiles"
+            },
+            {
+              "id": "s2-continuous-random-variables.5",
+              "text": "Find the mode from the pdf"
+            },
+            {
+              "id": "s2-continuous-random-variables.6",
+              "text": "Work between pdf and cumulative distribution function"
+            }
+          ]
+        },
+        {
+          "id": "s2-sampling-and-estimation",
+          "number": "6.4",
+          "name": "Sampling and estimation",
+          "objectives": [
+            {
+              "id": "s2-sampling-and-estimation.1",
+              "text": "Distinguish population from sample and understand sampling methods"
+            },
+            {
+              "id": "s2-sampling-and-estimation.2",
+              "text": "Describe the distribution of the sample mean"
+            },
+            {
+              "id": "s2-sampling-and-estimation.3",
+              "text": "Apply the central limit theorem for large samples"
+            },
+            {
+              "id": "s2-sampling-and-estimation.4",
+              "text": "Calculate unbiased estimates of population mean and variance"
+            },
+            {
+              "id": "s2-sampling-and-estimation.5",
+              "text": "Construct confidence intervals for a population mean"
+            },
+            {
+              "id": "s2-sampling-and-estimation.6",
+              "text": "Construct confidence intervals for a population proportion"
+            },
+            {
+              "id": "s2-sampling-and-estimation.7",
+              "text": "Interpret confidence intervals in context"
+            }
+          ]
+        },
+        {
+          "id": "s2-hypothesis-tests",
+          "number": "6.5",
+          "name": "Hypothesis tests",
+          "objectives": [
+            {
+              "id": "s2-hypothesis-tests.1",
+              "text": "State null and alternative hypotheses, one- and two-tailed"
+            },
+            {
+              "id": "s2-hypothesis-tests.2",
+              "text": "Carry out a hypothesis test for a binomial proportion"
+            },
+            {
+              "id": "s2-hypothesis-tests.3",
+              "text": "Carry out a hypothesis test for a Poisson mean"
+            },
+            {
+              "id": "s2-hypothesis-tests.4",
+              "text": "Carry out a hypothesis test for a normal mean, using the sample mean"
+            },
+            {
+              "id": "s2-hypothesis-tests.5",
+              "text": "Understand Type I and Type II errors"
+            },
+            {
+              "id": "s2-hypothesis-tests.6",
+              "text": "Find the probability of a Type I or Type II error"
+            },
+            {
+              "id": "s2-hypothesis-tests.7",
+              "text": "Interpret the result of a test in context"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

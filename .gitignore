@@ -25,3 +25,9 @@ scripts/.env
 .npmcache
 .DS_Store
 .env*
+
+# Content pipeline intermediates
+scripts/content/out/
+scripts/content/cache/
+__pycache__/
+.claude/scheduled_tasks.lock

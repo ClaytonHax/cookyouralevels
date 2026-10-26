@@ -1,8 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Design tokens: space-separated RGB channels so Tailwind opacity modifiers work (bg-flame/10). */
+:root {
+  --bg: 251 250 247;
+  --surface: 255 255 255;
+  --surface-2: 243 241 236;
+  --border: 231 227 218;
+  --ink: 22 20 31;
+  --ink-2: 74 71 87;
+  --ink-3: 112 109 126;
+  --flame: 234 88 12;
+  --flame-strong: 194 65 12;
+  --flame-soft: 255 241 232;
+  --maths: 5 150 105;
+  --maths-soft: 220 245 234;
+  --physics: 37 99 235;
+  --physics-soft: 224 234 253;
+  --cs: 124 58 237;
+  --cs-soft: 237 229 253;
+  --conf-red: 220 38 38;
+  --conf-amber: 217 119 6;
+  --conf-green: 22 163 74;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 15 14 20;
+  --surface: 23 22 31;
+  --surface-2: 31 30 41;
+  --border: 42 41 53;
+  --ink: 242 240 234;
+  --ink-2: 185 182 198;
+  --ink-3: 138 135 153;
+  --flame: 251 120 56;
+  --flame-strong: 194 65 12;
+  --flame-soft: 42 26 18;
+  --maths: 52 211 153;
+  --maths-soft: 16 44 36;
+  --physics: 96 165 250;
+  --physics-soft: 20 32 58;
+  --cs: 167 139 250;
+  --cs-soft: 34 26 58;
+  --conf-red: 248 113 113;
+  --conf-amber: 251 191 36;
+  --conf-green: 74 222 128;
+  color-scheme: dark;
+}
 
 @layer base {
   html {
@@ -10,6 +55,73 @@
   }
 
   body {
-    @apply font-body text-brand-text bg-brand-bg antialiased;
+    @apply font-body text-ink bg-bg antialiased;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background: rgb(var(--flame) / 0.25);
+  }
+
+  /* Visible keyboard focus everywhere */
+  :focus-visible {
+    outline: 2px solid rgb(var(--flame));
+    outline-offset: 2px;
+    border-radius: 6px;
   }
 }
+
+@layer components {
+  /** Apply to any custom interactive element for the flame focus ring. */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-flame focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
+  }
+  .card {
+    @apply bg-surface border border-border rounded-card shadow-soft;
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Markdown prose (used by <Markdown />) */
+.prose-cyal { @apply text-ink-2 leading-relaxed text-[15px]; }
+.prose-cyal > :first-child { margin-top: 0; }
+.prose-cyal > :last-child { margin-bottom: 0; }
+.prose-cyal h1, .prose-cyal h2, .prose-cyal h3, .prose-cyal h4 { @apply text-ink font-display font-bold tracking-tight; }
+.prose-cyal h1 { @apply text-2xl mt-8 mb-3; }
+.prose-cyal h2 { @apply text-xl mt-7 mb-2.5; }
+.prose-cyal h3 { @apply text-lg mt-6 mb-2; }
+.prose-cyal h4 { @apply text-base mt-5 mb-1.5; }
+.prose-cyal p { @apply my-3; }
+.prose-cyal ul { @apply list-disc pl-6 my-3 space-y-1; }
+.prose-cyal ol { @apply list-decimal pl-6 my-3 space-y-1; }
+.prose-cyal li::marker { color: rgb(var(--flame)); }
+.prose-cyal a { @apply text-flame-strong underline underline-offset-2 hover:text-flame; }
+.dark .prose-cyal a { @apply text-flame; }
+.prose-cyal strong { @apply text-ink font-bold; }
+.prose-cyal blockquote { @apply my-4 pl-4 border-l-4 border-flame/50 text-ink-2 italic; }
+.prose-cyal code { @apply font-mono text-[0.85em] bg-surface-2 border border-border rounded px-1 py-0.5 text-ink; }
+.prose-cyal pre { @apply my-4 p-4 bg-surface-2 border border-border rounded-control overflow-x-auto text-sm; }
+.prose-cyal pre code { @apply bg-transparent border-0 p-0; }
+.prose-cyal hr { @apply my-6 border-border; }
+.prose-cyal table { @apply my-4 w-full text-sm border-collapse; display: block; overflow-x: auto; }
+.prose-cyal th { @apply text-left font-bold text-ink bg-surface-2 border border-border px-3 py-1.5; }
+.prose-cyal td { @apply border border-border px-3 py-1.5; }
+.prose-cyal img { @apply my-4 rounded-control max-w-full; }
+.prose-cyal .katex-display { overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+.prose-cyal .katex { font-size: 1.05em; }

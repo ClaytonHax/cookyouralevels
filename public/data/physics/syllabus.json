@@ -1,0 +1,763 @@
+{
+  "subjectId": "physics",
+  "code": "9702",
+  "name": "Physics",
+  "version": "2025–2027",
+  "pdfUrl": "https://www.cambridgeinternational.org/Images/664565-2025-2027-syllabus.pdf",
+  "components": [
+    {
+      "id": "as",
+      "name": "AS Level",
+      "level": "AS",
+      "papers": [
+        1,
+        2,
+        3
+      ],
+      "topics": [
+        {
+          "id": "physical-quantities-and-units",
+          "number": "1",
+          "name": "Physical quantities and units",
+          "objectives": [
+            {
+              "id": "physical-quantities-and-units.1",
+              "text": "Know the SI base quantities and units (mass, length, time, current, temperature, amount of substance) and express derived units in base units."
+            },
+            {
+              "id": "physical-quantities-and-units.2",
+              "text": "Use SI prefixes from pico to tera and convert between units sensibly."
+            },
+            {
+              "id": "physical-quantities-and-units.3",
+              "text": "Check whether an equation is homogeneous using base units."
+            },
+            {
+              "id": "physical-quantities-and-units.4",
+              "text": "Distinguish random from systematic errors, and precision/repeatability from accuracy."
+            },
+            {
+              "id": "physical-quantities-and-units.5",
+              "text": "Assess uncertainties in measurements and calculated results, as absolute, fractional and percentage values."
+            },
+            {
+              "id": "physical-quantities-and-units.6",
+              "text": "Combine uncertainties for sums, differences, products, quotients and powers."
+            },
+            {
+              "id": "physical-quantities-and-units.7",
+              "text": "Distinguish scalars from vectors, and add, subtract and resolve vectors into components."
+            }
+          ]
+        },
+        {
+          "id": "kinematics",
+          "number": "2",
+          "name": "Kinematics",
+          "objectives": [
+            {
+              "id": "kinematics.1",
+              "text": "Define and use displacement, speed, velocity and acceleration."
+            },
+            {
+              "id": "kinematics.2",
+              "text": "Interpret displacement-time and velocity-time graphs, using gradients and areas."
+            },
+            {
+              "id": "kinematics.3",
+              "text": "Derive and use the constant-acceleration equations such as $v = u + at$ and $s = ut + \\tfrac12 at^2$."
+            },
+            {
+              "id": "kinematics.4",
+              "text": "Analyse free fall and the acceleration of free fall $g$, including experimental determination."
+            },
+            {
+              "id": "kinematics.5",
+              "text": "Treat projectile motion by resolving it into independent horizontal and vertical components."
+            }
+          ]
+        },
+        {
+          "id": "dynamics",
+          "number": "3",
+          "name": "Dynamics",
+          "objectives": [
+            {
+              "id": "dynamics.1",
+              "text": "State and apply Newton's three laws of motion."
+            },
+            {
+              "id": "dynamics.2",
+              "text": "Define mass, weight, and linear momentum, and relate force to rate of change of momentum, $F = \\Delta p/\\Delta t$."
+            },
+            {
+              "id": "dynamics.3",
+              "text": "Explain free-fall and terminal velocity effects of drag and viscous forces."
+            },
+            {
+              "id": "dynamics.4",
+              "text": "Apply conservation of momentum in one and two dimensions to collisions and explosions."
+            },
+            {
+              "id": "dynamics.5",
+              "text": "Distinguish elastic from inelastic collisions using kinetic energy."
+            },
+            {
+              "id": "dynamics.6",
+              "text": "Relate impulse to force-time graphs and change in momentum."
+            }
+          ]
+        },
+        {
+          "id": "forces-density-and-pressure",
+          "number": "4",
+          "name": "Forces, density and pressure",
+          "objectives": [
+            {
+              "id": "forces-density-and-pressure.1",
+              "text": "Describe the nature and origin of gravitational, electric, magnetic, upthrust, friction, drag and tension forces, and draw free-body diagrams."
+            },
+            {
+              "id": "forces-density-and-pressure.2",
+              "text": "Define and use density, $\\rho = m/V$."
+            },
+            {
+              "id": "forces-density-and-pressure.3",
+              "text": "Define and use pressure, $p = F/A$, and hydrostatic pressure $p = \\rho g h$."
+            },
+            {
+              "id": "forces-density-and-pressure.4",
+              "text": "Explain the origin of upthrust and use $F = \\rho g V$."
+            },
+            {
+              "id": "forces-density-and-pressure.5",
+              "text": "Define the moment of a force, torque of a couple, and apply the principle of moments."
+            },
+            {
+              "id": "forces-density-and-pressure.6",
+              "text": "Use equilibrium conditions: no resultant force and no resultant moment, including triangle of forces."
+            }
+          ]
+        },
+        {
+          "id": "work-energy-and-power",
+          "number": "5",
+          "name": "Work, energy and power",
+          "objectives": [
+            {
+              "id": "work-energy-and-power.1",
+              "text": "Define and use work done by a force, including $W = Fs\\cos\\theta$ and $W = p\\Delta V$."
+            },
+            {
+              "id": "work-energy-and-power.2",
+              "text": "Distinguish gravitational potential energy and kinetic energy, using $\\Delta E_p = mg\\Delta h$ and $E_k = \\tfrac12 mv^2$."
+            },
+            {
+              "id": "work-energy-and-power.3",
+              "text": "Apply conservation of energy to mechanical situations and recognise energy dissipation."
+            },
+            {
+              "id": "work-energy-and-power.4",
+              "text": "Define and use power, $P = W/t$ and $P = Fv$."
+            },
+            {
+              "id": "work-energy-and-power.5",
+              "text": "Calculate efficiency as useful output over total input."
+            }
+          ]
+        },
+        {
+          "id": "deformation-of-solids",
+          "number": "6",
+          "name": "Deformation of solids",
+          "objectives": [
+            {
+              "id": "deformation-of-solids.1",
+              "text": "Describe how tensile and compressive forces deform a material."
+            },
+            {
+              "id": "deformation-of-solids.2",
+              "text": "Define and use Hooke's law, the spring constant and elastic limit, $F = kx$."
+            },
+            {
+              "id": "deformation-of-solids.3",
+              "text": "Define stress, strain and the Young modulus, and determine the Young modulus experimentally."
+            },
+            {
+              "id": "deformation-of-solids.4",
+              "text": "Use force-extension graphs to find the work done and the elastic potential energy $E = \\tfrac12 Fx$."
+            },
+            {
+              "id": "deformation-of-solids.5",
+              "text": "Distinguish elastic from plastic deformation and describe ductile, brittle and polymeric behaviour from stress-strain curves."
+            }
+          ]
+        },
+        {
+          "id": "waves",
+          "number": "7",
+          "name": "Waves",
+          "objectives": [
+            {
+              "id": "waves.1",
+              "text": "Describe progressive waves and define displacement, amplitude, wavelength, period, frequency, phase difference and wave speed."
+            },
+            {
+              "id": "waves.2",
+              "text": "Use $v = f\\lambda$ and relate intensity to amplitude, $I \\propto A^2$, and to power per unit area."
+            },
+            {
+              "id": "waves.3",
+              "text": "Distinguish transverse from longitudinal waves and describe polarisation and Malus-type intensity changes."
+            },
+            {
+              "id": "waves.4",
+              "text": "Describe the electromagnetic spectrum, its regions and their approximate wavelengths, and that all waves travel at $c$ in a vacuum."
+            },
+            {
+              "id": "waves.5",
+              "text": "Use the Doppler effect for sound, $f_o = f_s v/(v \\pm v_s)$."
+            },
+            {
+              "id": "waves.6",
+              "text": "Interpret graphs of wave displacement against distance and time."
+            }
+          ]
+        },
+        {
+          "id": "superposition",
+          "number": "8",
+          "name": "Superposition",
+          "objectives": [
+            {
+              "id": "superposition.1",
+              "text": "Apply the principle of superposition and explain stationary waves, nodes and antinodes."
+            },
+            {
+              "id": "superposition.2",
+              "text": "Describe stationary waves on strings and in air columns, and determine wavelength and speed from them."
+            },
+            {
+              "id": "superposition.3",
+              "text": "Explain diffraction at a single slit and its dependence on slit width and wavelength."
+            },
+            {
+              "id": "superposition.4",
+              "text": "Explain interference and the conditions for coherence, including two-source interference and Young's double slit, $\\lambda = ax/D$."
+            },
+            {
+              "id": "superposition.5",
+              "text": "Use the diffraction grating equation $d\\sin\\theta = n\\lambda$."
+            }
+          ]
+        },
+        {
+          "id": "electricity",
+          "number": "9",
+          "name": "Electricity",
+          "objectives": [
+            {
+              "id": "electricity.1",
+              "text": "Define electric current, charge and the elementary charge, with $Q = It$."
+            },
+            {
+              "id": "electricity.2",
+              "text": "Define potential difference, electromotive force, and relate energy to charge, $V = W/Q$."
+            },
+            {
+              "id": "electricity.3",
+              "text": "Use $I = nAvq$ to describe current in terms of charge carriers."
+            },
+            {
+              "id": "electricity.4",
+              "text": "Define resistance and resistivity, $R = \\rho L/A$, and use $V = IR$."
+            },
+            {
+              "id": "electricity.5",
+              "text": "Sketch and interpret I-V characteristics of resistors, filament lamps, diodes and thermistors."
+            },
+            {
+              "id": "electricity.6",
+              "text": "Calculate electrical power, $P = VI = I^2R = V^2/R$, and energy transferred."
+            }
+          ]
+        },
+        {
+          "id": "dc-circuits",
+          "number": "10",
+          "name": "D.C. circuits",
+          "objectives": [
+            {
+              "id": "dc-circuits.1",
+              "text": "Draw and interpret circuit diagrams using standard symbols."
+            },
+            {
+              "id": "dc-circuits.2",
+              "text": "Apply Kirchhoff's first law (conservation of charge) and second law (conservation of energy)."
+            },
+            {
+              "id": "dc-circuits.3",
+              "text": "Calculate the combined resistance of resistors in series and in parallel."
+            },
+            {
+              "id": "dc-circuits.4",
+              "text": "Explain internal resistance and its effect on terminal potential difference."
+            },
+            {
+              "id": "dc-circuits.5",
+              "text": "Analyse potential dividers, including with thermistors and LDRs."
+            },
+            {
+              "id": "dc-circuits.6",
+              "text": "Explain the use of potentiometer circuits for comparing potential differences."
+            }
+          ]
+        },
+        {
+          "id": "particle-physics",
+          "number": "11",
+          "name": "Particle physics",
+          "objectives": [
+            {
+              "id": "particle-physics.1",
+              "text": "Describe the nuclear atom model and the evidence from alpha-particle scattering."
+            },
+            {
+              "id": "particle-physics.2",
+              "text": "Describe the proton, neutron and electron composition of the nucleus and use nucleon and proton numbers for isotopes."
+            },
+            {
+              "id": "particle-physics.3",
+              "text": "Apply conservation of charge, nucleon number and mass-energy in nuclear equations."
+            },
+            {
+              "id": "particle-physics.4",
+              "text": "Describe alpha, beta and gamma decay and the resulting changes in the nucleus."
+            },
+            {
+              "id": "particle-physics.5",
+              "text": "Describe the quark model: up, down and strange quarks, and hadrons as made of quarks."
+            },
+            {
+              "id": "particle-physics.6",
+              "text": "Classify leptons and hadrons, and explain beta decay in terms of quark change and the neutrino."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "name": "A Level",
+      "level": "A2",
+      "papers": [
+        4,
+        5
+      ],
+      "topics": [
+        {
+          "id": "motion-in-a-circle",
+          "number": "12",
+          "name": "Motion in a circle",
+          "objectives": [
+            {
+              "id": "motion-in-a-circle.1",
+              "text": "Define the radian and convert between radians and degrees."
+            },
+            {
+              "id": "motion-in-a-circle.2",
+              "text": "Define angular velocity and use $v = r\\omega$ and $\\omega = 2\\pi/T$."
+            },
+            {
+              "id": "motion-in-a-circle.3",
+              "text": "Explain that circular motion requires a centripetal force towards the centre."
+            },
+            {
+              "id": "motion-in-a-circle.4",
+              "text": "Use $a = v^2/r = r\\omega^2$ and $F = mv^2/r = mr\\omega^2$ for circular motion problems."
+            }
+          ]
+        },
+        {
+          "id": "gravitational-fields",
+          "number": "13",
+          "name": "Gravitational fields",
+          "objectives": [
+            {
+              "id": "gravitational-fields.1",
+              "text": "Describe a gravitational field as a region where mass experiences a force and define gravitational field strength."
+            },
+            {
+              "id": "gravitational-fields.2",
+              "text": "Use Newton's law of gravitation, $F = GMm/r^2$, for point masses."
+            },
+            {
+              "id": "gravitational-fields.3",
+              "text": "Derive and use $g = GM/r^2$ for the field of a point mass and recognise its uniformity near the surface."
+            },
+            {
+              "id": "gravitational-fields.4",
+              "text": "Define gravitational potential and use $\\phi = -GM/r$, with potential energy changes."
+            },
+            {
+              "id": "gravitational-fields.5",
+              "text": "Analyse circular orbits, derive Kepler's third law, and describe geostationary orbits."
+            },
+            {
+              "id": "gravitational-fields.6",
+              "text": "Use escape-related ideas via the area under a field strength-distance graph."
+            }
+          ]
+        },
+        {
+          "id": "temperature",
+          "number": "14",
+          "name": "Temperature",
+          "objectives": [
+            {
+              "id": "temperature.1",
+              "text": "Explain thermal equilibrium and the zero-law basis for temperature measurement."
+            },
+            {
+              "id": "temperature.2",
+              "text": "Convert between the Celsius and thermodynamic (Kelvin) scales and describe absolute zero."
+            },
+            {
+              "id": "temperature.3",
+              "text": "Explain how physical properties are used in thermometers and compare their sensitivity and range."
+            },
+            {
+              "id": "temperature.4",
+              "text": "Define and use specific heat capacity and specific latent heats of fusion and vaporisation."
+            },
+            {
+              "id": "temperature.5",
+              "text": "Describe how to determine specific heat capacity and latent heat experimentally."
+            }
+          ]
+        },
+        {
+          "id": "ideal-gases",
+          "number": "15",
+          "name": "Ideal gases",
+          "objectives": [
+            {
+              "id": "ideal-gases.1",
+              "text": "Use the equation of state $pV = nRT$ and $pV = NkT$, with the mole and Avogadro constant."
+            },
+            {
+              "id": "ideal-gases.2",
+              "text": "State the assumptions of the kinetic theory of gases."
+            },
+            {
+              "id": "ideal-gases.3",
+              "text": "Derive and use $pV = \\tfrac13 Nm\\langle c^2\\rangle$ for gas pressure."
+            },
+            {
+              "id": "ideal-gases.4",
+              "text": "Show that mean translational kinetic energy per molecule is $\\tfrac32 kT$ and use it with r.m.s. speed."
+            },
+            {
+              "id": "ideal-gases.5",
+              "text": "Explain Boyle's law and the pressure and temperature laws from kinetic theory."
+            }
+          ]
+        },
+        {
+          "id": "thermodynamics",
+          "number": "16",
+          "name": "Thermodynamics",
+          "objectives": [
+            {
+              "id": "thermodynamics.1",
+              "text": "Explain internal energy as the sum of random kinetic and potential energies of molecules."
+            },
+            {
+              "id": "thermodynamics.2",
+              "text": "Relate internal energy changes to temperature and phase changes."
+            },
+            {
+              "id": "thermodynamics.3",
+              "text": "Apply the first law, $\\Delta U = q + w$, with sign conventions."
+            },
+            {
+              "id": "thermodynamics.4",
+              "text": "Calculate work done by or on a gas at constant pressure, $w = p\\Delta V$, and interpret p-V diagrams."
+            }
+          ]
+        },
+        {
+          "id": "oscillations",
+          "number": "17",
+          "name": "Oscillations",
+          "objectives": [
+            {
+              "id": "oscillations.1",
+              "text": "Describe free, damped and forced oscillations and define amplitude, period, frequency and angular frequency."
+            },
+            {
+              "id": "oscillations.2",
+              "text": "Define simple harmonic motion, $a = -\\omega^2 x$, and use displacement, velocity and acceleration graphs."
+            },
+            {
+              "id": "oscillations.3",
+              "text": "Use $x = x_0\\sin\\omega t$, $v = \\pm\\omega\\sqrt{x_0^2 - x^2}$ and $v_0 = \\omega x_0$."
+            },
+            {
+              "id": "oscillations.4",
+              "text": "Analyse energy exchange in SHM between kinetic and potential forms."
+            },
+            {
+              "id": "oscillations.5",
+              "text": "Describe light, critical and heavy damping, with practical examples."
+            },
+            {
+              "id": "oscillations.6",
+              "text": "Explain resonance in forced oscillations and the effect of damping on the amplitude-frequency curve."
+            }
+          ]
+        },
+        {
+          "id": "electric-fields",
+          "number": "18",
+          "name": "Electric fields",
+          "objectives": [
+            {
+              "id": "electric-fields.1",
+              "text": "Describe an electric field as a region where a charge feels a force, and define field strength $E = F/q$."
+            },
+            {
+              "id": "electric-fields.2",
+              "text": "Use Coulomb's law, $F = Qq/(4\\pi\\varepsilon_0 r^2)$, and the field of a point charge."
+            },
+            {
+              "id": "electric-fields.3",
+              "text": "Use $E = V/d$ for a uniform field and describe motion of charged particles in it."
+            },
+            {
+              "id": "electric-fields.4",
+              "text": "Define electric potential and use $V = Q/(4\\pi\\varepsilon_0 r)$ with potential energy."
+            },
+            {
+              "id": "electric-fields.5",
+              "text": "Relate field strength to potential gradient and interpret field and potential graphs."
+            },
+            {
+              "id": "electric-fields.6",
+              "text": "Draw and interpret field lines and equipotentials."
+            }
+          ]
+        },
+        {
+          "id": "capacitance",
+          "number": "19",
+          "name": "Capacitance",
+          "objectives": [
+            {
+              "id": "capacitance.1",
+              "text": "Define capacitance, $C = Q/V$, and use series and parallel combinations."
+            },
+            {
+              "id": "capacitance.2",
+              "text": "Determine energy stored in a capacitor, $W = \\tfrac12 QV = \\tfrac12 CV^2$, from a charge-voltage graph."
+            },
+            {
+              "id": "capacitance.3",
+              "text": "Analyse capacitor charging and discharging through a resistor, using the time constant $\\tau = RC$."
+            },
+            {
+              "id": "capacitance.4",
+              "text": "Use exponential discharge relations such as $x = x_0 e^{-t/RC}$ for charge, current and voltage."
+            }
+          ]
+        },
+        {
+          "id": "magnetic-fields",
+          "number": "20",
+          "name": "Magnetic fields",
+          "objectives": [
+            {
+              "id": "magnetic-fields.1",
+              "text": "Describe magnetic fields from currents and magnets, including field lines for wires, coils and solenoids."
+            },
+            {
+              "id": "magnetic-fields.2",
+              "text": "Use the force on a current-carrying conductor, $F = BIL\\sin\\theta$, and define the tesla."
+            },
+            {
+              "id": "magnetic-fields.3",
+              "text": "Use $F = Bqv\\sin\\theta$ and analyse charged particle paths in magnetic and electric fields, including velocity selectors."
+            },
+            {
+              "id": "magnetic-fields.4",
+              "text": "Explain the Hall effect and use the Hall probe to measure flux density."
+            },
+            {
+              "id": "magnetic-fields.5",
+              "text": "Define magnetic flux and flux linkage, $\\Phi = BA$."
+            },
+            {
+              "id": "magnetic-fields.6",
+              "text": "State and apply Faraday's and Lenz's laws to induced e.m.f."
+            },
+            {
+              "id": "magnetic-fields.7",
+              "text": "Explain induced e.m.f. in moving conductors, generators and transformers (including losses)."
+            }
+          ]
+        },
+        {
+          "id": "alternating-currents",
+          "number": "21",
+          "name": "Alternating currents",
+          "objectives": [
+            {
+              "id": "alternating-currents.1",
+              "text": "Describe sinusoidal alternating current and voltage, with peak value, period and frequency."
+            },
+            {
+              "id": "alternating-currents.2",
+              "text": "Relate r.m.s. values to peak values, $I_{rms} = I_0/\\sqrt2$, and calculate mean power."
+            },
+            {
+              "id": "alternating-currents.3",
+              "text": "Explain half-wave and full-wave rectification with diodes, and smoothing with a capacitor."
+            }
+          ]
+        },
+        {
+          "id": "quantum-physics",
+          "number": "22",
+          "name": "Quantum physics",
+          "objectives": [
+            {
+              "id": "quantum-physics.1",
+              "text": "Describe the photon model and calculate photon energy, $E = hf$."
+            },
+            {
+              "id": "quantum-physics.2",
+              "text": "Explain the photoelectric effect and its evidence for the particle nature of light."
+            },
+            {
+              "id": "quantum-physics.3",
+              "text": "Use $hf = \\phi + E_{k,max}$ and the threshold frequency and work function."
+            },
+            {
+              "id": "quantum-physics.4",
+              "text": "Describe electron diffraction as evidence for wave-particle duality and use $\\lambda = h/p$."
+            },
+            {
+              "id": "quantum-physics.5",
+              "text": "Explain line emission and absorption spectra using discrete energy levels, $hf = E_2 - E_1$."
+            },
+            {
+              "id": "quantum-physics.6",
+              "text": "Describe X-ray production and the continuous and characteristic spectra."
+            },
+            {
+              "id": "quantum-physics.7",
+              "text": "Explain atomic energy levels and the relation to spectral lines."
+            }
+          ]
+        },
+        {
+          "id": "nuclear-physics",
+          "number": "23",
+          "name": "Nuclear physics",
+          "objectives": [
+            {
+              "id": "nuclear-physics.1",
+              "text": "Explain mass defect and binding energy, and use $E = mc^2$."
+            },
+            {
+              "id": "nuclear-physics.2",
+              "text": "Interpret the binding energy per nucleon curve and explain fusion and fission energy release."
+            },
+            {
+              "id": "nuclear-physics.3",
+              "text": "Describe radioactive decay as random and spontaneous and define activity and decay constant."
+            },
+            {
+              "id": "nuclear-physics.4",
+              "text": "Use $A = \\lambda N$ and $x = x_0 e^{-\\lambda t}$ for activity and number of nuclei."
+            },
+            {
+              "id": "nuclear-physics.5",
+              "text": "Define half-life and use $\\lambda = \\ln 2/t_{1/2}$."
+            },
+            {
+              "id": "nuclear-physics.6",
+              "text": "Explain the different ionising and penetrating properties of alpha, beta and gamma radiation."
+            }
+          ]
+        },
+        {
+          "id": "medical-physics",
+          "number": "24",
+          "name": "Medical physics",
+          "objectives": [
+            {
+              "id": "medical-physics.1",
+              "text": "Describe the production and properties of ultrasound and its generation by piezoelectric transducers."
+            },
+            {
+              "id": "medical-physics.2",
+              "text": "Explain how ultrasound scans use reflection and acoustic impedance, $Z = \\rho c$, with intensity reflection coefficients."
+            },
+            {
+              "id": "medical-physics.3",
+              "text": "Describe the production of X-rays and their attenuation, $I = I_0 e^{-\\mu x}$."
+            },
+            {
+              "id": "medical-physics.4",
+              "text": "Explain how CT scanners build images from X-ray attenuation."
+            },
+            {
+              "id": "medical-physics.5",
+              "text": "Describe the use of radioactive tracers in PET scanning and the role of annihilation."
+            },
+            {
+              "id": "medical-physics.6",
+              "text": "Describe MRI imaging principles using magnetic fields, nuclear resonance and radio-frequency pulses."
+            }
+          ]
+        },
+        {
+          "id": "astronomy-and-cosmology",
+          "number": "25",
+          "name": "Astronomy and cosmology",
+          "objectives": [
+            {
+              "id": "astronomy-and-cosmology.1",
+              "text": "Explain standard candles and luminosity, and use the inverse square law for radiant flux, $F = L/(4\\pi d^2)$."
+            },
+            {
+              "id": "astronomy-and-cosmology.2",
+              "text": "Describe Wien's displacement law and Stefan-Boltzmann law, $L = 4\\pi r^2\\sigma T^4$."
+            },
+            {
+              "id": "astronomy-and-cosmology.3",
+              "text": "Explain how stellar properties are determined from spectra and luminosity."
+            },
+            {
+              "id": "astronomy-and-cosmology.4",
+              "text": "Use redshift, $\\Delta\\lambda/\\lambda \\approx v/c$, to infer recession speed."
+            },
+            {
+              "id": "astronomy-and-cosmology.5",
+              "text": "State and use Hubble's law, $v = H_0 d$, and relate it to the expansion of the universe and the Big Bang."
+            },
+            {
+              "id": "astronomy-and-cosmology.6",
+              "text": "Describe the evidence for the Big Bang, including cosmic microwave background radiation, and discuss dark matter and dark energy."
+            },
+            {
+              "id": "astronomy-and-cosmology.7",
+              "text": "Describe the stages in the life cycle of stars and the Hertzsprung-Russell diagram."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

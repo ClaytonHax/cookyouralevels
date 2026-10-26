@@ -1,97 +1,67 @@
-import { ArrowRight, Calculator, Atom, Cpu } from 'lucide-react'
-import { useAuth } from '../../contexts/AuthContext'
+import { ArrowRight } from 'lucide-react'
+import { SUBJECTS } from '../../lib/subjects'
+import type { SubjectTheme } from '../../lib/subjects'
+import { useSyllabus, usePapers, useQuestions } from '../../hooks/useContent'
+import { allTopics } from '../../lib/content'
+import { Skeleton } from '../ui'
+import Reveal from './Reveal'
+import Section from './Section'
 
-const subjects = [
-  {
-    id: 'mathematics',
-    name: 'Mathematics',
-    icon: Calculator,
-    topBorder: 'border-t-brand-primary',
-    iconStyle: 'bg-brand-primary/10 text-brand-primary',
-    description: 'Pure, Mechanics, Statistics, and Further Mathematics. Full coverage of AS and A Level syllabuses.',
-  },
-  {
-    id: 'physics',
-    name: 'Physics',
-    icon: Atom,
-    topBorder: 'border-t-blue-400',
-    iconStyle: 'bg-blue-50 text-blue-500',
-    description: 'From waves to nuclear physics. All topics for AS and A Level with clear mark-scheme solutions.',
-  },
-  {
-    id: 'computer-science',
-    name: 'Computer Science',
-    code: '9618',
-    icon: Cpu,
-    topBorder: 'border-t-brand-cta',
-    iconStyle: 'bg-brand-cta/10 text-brand-cta',
-    description: 'Theory, algorithms, data structures, and programming. Papers 1–4 for AS and A Level.',
-  },
-]
+const blurb: Record<string, string> = {
+  mathematics: 'Pure 1 to 3, Mechanics, Probability & Statistics. Algebra, calculus and everything in between.',
+  physics: 'AS and A Level Physics, from kinematics to quantum, with structured and multiple-choice practice.',
+  'computer-science': 'Theory, data structures, algorithms and the A2 topics, with exam-style questions.',
+}
 
-export default function Subjects() {
-  const { openAuth } = useAuth()
-
+function Stat({ value, label, loading }: { value: number | null; label: string; loading: boolean }) {
   return (
-    <section className="py-24 bg-brand-bg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-brand-text mb-4">
-            Subjects available now
-          </h2>
-          <p className="font-body text-lg text-slate-500">
-            More subjects coming. Start revising these three today.
-          </p>
+    <div>
+      <div className="font-display font-extrabold text-2xl text-ink tabular-nums h-8 flex items-center">
+        {loading ? <Skeleton className="h-6 w-12" /> : value ? value.toLocaleString() : '-'}
+      </div>
+      <div className="text-xs text-ink-3 font-bold">{label}</div>
+    </div>
+  )
+}
+
+function SubjectCard({ s }: { s: SubjectTheme }) {
+  const syl = useSyllabus(s.id)
+  const qs = useQuestions(s.id)
+  const papers = usePapers(s.id)
+  const topics = syl.data ? allTopics(syl.data).length : null
+  return (
+    <div className={`card h-full overflow-hidden border-t-4 ${s.cls.accentTop}`}>
+      <div className="p-5">
+        <div className="flex items-center justify-between gap-2">
+          <span className={`inline-flex items-center gap-2 text-xs font-bold ${s.cls.text}`}><span className={`w-2 h-2 rounded-full ${s.cls.dot}`} /> CIE {s.code}</span>
         </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {subjects.map((subject) => {
-            const Icon = subject.icon
-            return (
-              <div
-                key={subject.id}
-                className={`bg-white rounded-2xl border-t-4 ${subject.topBorder} p-8 shadow-sm hover:shadow-md transition-shadow duration-200`}
-              >
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${subject.iconStyle}`}>
-                  <Icon className="w-6 h-6" />
-                </div>
-
-                <div className="flex items-center gap-2 mb-2">
-                  <h3 className="font-heading text-2xl font-bold text-brand-text">
-                    {subject.name}
-                  </h3>
-                  {subject.code && (
-                    <span className="text-xs font-body font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
-                      {subject.code}
-                    </span>
-                  )}
-                </div>
-
-                <div className="flex gap-2 mb-4">
-                  <span className="text-xs font-body font-semibold text-brand-primary bg-brand-primary/10 px-2.5 py-1 rounded-full">
-                    AS Level
-                  </span>
-                  <span className="text-xs font-body font-semibold text-brand-primary bg-brand-primary/10 px-2.5 py-1 rounded-full">
-                    A Level
-                  </span>
-                </div>
-
-                <p className="font-body text-sm text-slate-500 leading-relaxed mb-6">
-                  {subject.description}
-                </p>
-
-                <button
-                  onClick={openAuth}
-                  className="flex items-center gap-1.5 text-sm font-body font-semibold text-brand-primary hover:text-indigo-700 transition-colors duration-150 cursor-pointer"
-                >
-                  Start practising
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-            )
-          })}
+        <h3 className="font-display font-extrabold text-2xl text-ink mt-2">{s.name}</h3>
+        <p className="text-sm text-ink-2 mt-2 leading-relaxed min-h-[63px]">{blurb[s.id]}</p>
+        <div className={`grid grid-cols-3 gap-3 mt-5 pt-4 border-t border-border`}>
+          <Stat value={topics} label="Topics" loading={syl.loading} />
+          <Stat value={qs.data ? qs.data.length : null} label="Questions" loading={qs.loading} />
+          <Stat value={papers.data ? papers.data.length : null} label="Papers" loading={papers.loading} />
         </div>
       </div>
-    </section>
+    </div>
+  )
+}
+
+export default function Subjects() {
+  return (
+    <Section
+      id="subjects"
+      eyebrow="Subjects"
+      title="Three subjects, done properly."
+      intro="Start with the ones you take. More CIE subjects can follow once these are great."
+      className="bg-surface-2/50 border-y border-border"
+    >
+      <ul className="grid md:grid-cols-3 gap-4">
+        {SUBJECTS.map((s, i) => (
+          <li key={s.id}><Reveal delay={i * 70} className="h-full"><SubjectCard s={s} /></Reveal></li>
+        ))}
+      </ul>
+      <p className="mt-6 text-sm text-ink-3 inline-flex items-center gap-1.5">Counts are read live from the content on this site <ArrowRight className="w-3.5 h-3.5" aria-hidden /></p>
+    </Section>
   )
 }

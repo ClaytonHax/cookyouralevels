@@ -1,69 +1,63 @@
-import { Link, useNavigate } from 'react-router-dom'
-import { Flame, LogOut, LayoutDashboard } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Moon, Sun } from 'lucide-react'
 import { useAuth } from '../../contexts/AuthContext'
+import { useTheme } from '../../hooks/useTheme'
+import { Button, buttonClasses } from '../ui'
+
+export function BrandMark({ small }: { small?: boolean }) {
+  return (
+    <span className={`${small ? 'w-8 h-8 text-base' : 'w-9 h-9 text-lg'} rounded-[11px] bg-flame-strong flex items-center justify-center shadow-soft shrink-0`} aria-hidden>🔥</span>
+  )
+}
+
+const links = [
+  ['Features', '#features'],
+  ['Subjects', '#subjects'],
+  ['How it works', '#how'],
+  ['FAQ', '#faq'],
+]
 
 export default function Navbar() {
-  const { user, openAuth, signOut } = useAuth()
-  const navigate = useNavigate()
-
-  const handleSignOut = async () => {
-    await signOut()
-    navigate('/')
-  }
+  const { user, openAuth } = useAuth()
+  const { theme, toggle } = useTheme()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/85 border-b border-indigo-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link to={user ? '/dashboard' : '/'} className="flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center">
-              <Flame className="w-4 h-4 text-white" />
-            </div>
-            <span className="font-heading font-bold text-lg text-brand-text">
-              Cook Your <span className="text-brand-primary">A Levels</span>
-            </span>
-          </Link>
+    <header className="sticky top-0 z-40 border-b border-border bg-bg/85 backdrop-blur-md">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center gap-4">
+        <Link to={user ? '/dashboard' : '/'} className="flex items-center gap-2.5 focus-ring rounded-control">
+          <BrandMark small />
+          <span className="font-display font-extrabold text-[16px] sm:text-[17px] tracking-tight text-ink whitespace-nowrap">
+            Cook Your <span className="text-flame-strong dark:text-flame">A Levels</span>
+          </span>
+        </Link>
 
+        <nav aria-label="Sections" className="hidden md:flex items-center gap-1 ml-6">
+          {links.map(([label, href]) => (
+            <a key={href} href={href} className="px-3 py-2 rounded-control text-sm font-bold text-ink-2 hover:text-ink hover:bg-surface-2 transition-colors focus-ring">
+              {label}
+            </a>
+          ))}
+        </nav>
+
+        <div className="ml-auto flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={toggle}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            className="w-10 h-10 rounded-control flex items-center justify-center text-ink-2 hover:bg-surface-2 hover:text-ink transition-colors focus-ring cursor-pointer"
+          >
+            {theme === 'dark' ? <Sun className="w-[18px] h-[18px]" /> : <Moon className="w-[18px] h-[18px]" />}
+          </button>
           {user ? (
-            <div className="flex items-center gap-1 sm:gap-2">
-              <Link
-                to="/dashboard"
-                className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-body text-slate-500 hover:text-brand-primary hover:bg-indigo-50 rounded-lg transition-colors duration-150 cursor-pointer"
-              >
-                <LayoutDashboard className="w-4 h-4" />
-                <span className="hidden sm:inline">Dashboard</span>
-              </Link>
-              <div className="flex items-center gap-2 px-2">
-                {user.photoURL && (
-                  <img
-                    src={user.photoURL}
-                    alt={user.displayName ?? 'User'}
-                    className="w-7 h-7 rounded-full border-2 border-brand-primary/20"
-                  />
-                )}
-                <span className="text-sm font-body text-brand-text hidden sm:block font-semibold">
-                  {user.displayName?.split(' ')[0] ?? user.email?.split('@')[0]}
-                </span>
-              </div>
-              <button
-                onClick={handleSignOut}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-body text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors duration-150 cursor-pointer"
-                aria-label="Sign out"
-              >
-                <LogOut className="w-4 h-4" />
-                <span className="hidden sm:inline">Sign out</span>
-              </button>
-            </div>
+            <Link to="/dashboard" className={buttonClasses('primary', 'md')}>Open dashboard</Link>
           ) : (
-            <button
-              onClick={openAuth}
-              className="flex items-center gap-2 px-4 py-2 bg-brand-primary hover:bg-indigo-600 text-white text-sm font-body font-semibold rounded-lg transition-colors duration-150 cursor-pointer"
-            >
-                  Sign in
-            </button>
+            <>
+              <Button variant="ghost" onClick={openAuth}>Sign in</Button>
+              <Button className="hidden sm:inline-flex" onClick={openAuth}>Start free</Button>
+            </>
           )}
         </div>
       </div>
-    </nav>
+    </header>
   )
 }

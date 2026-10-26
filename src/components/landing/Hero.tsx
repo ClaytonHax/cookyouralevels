@@ -1,106 +1,32 @@
-import { ArrowRight, Sparkles } from 'lucide-react'
-import { useAuth } from '../../contexts/AuthContext'
-
-const floatingCards = [
-  {
-    subject: 'Mathematics',
-    topic: 'Integration',
-    preview: 'Find ∫(3x² + 2x − 1) dx, giving your answer in terms of x.',
-    accent: 'border-brand-primary',
-    rotate: '-rotate-3',
-    top: '10%',
-    left: '0%',
-  },
-  {
-    subject: 'Physics',
-    topic: 'Electricity',
-    preview: 'Calculate the resistance of a wire of length 2.0 m and cross-sectional area 1.5 × 10⁻⁶ m².',
-    accent: 'border-blue-400',
-    rotate: 'rotate-2',
-    top: '38%',
-    left: '8%',
-  },
-  {
-    subject: 'Computer Science',
-    topic: 'Algorithms',
-    preview: 'Trace through the bubble sort algorithm for the list [5, 2, 8, 1, 9].',
-    accent: 'border-brand-cta',
-    rotate: '-rotate-1',
-    top: '66%',
-    left: '2%',
-  },
-]
+import { ArrowRight, UserRound } from 'lucide-react'
+import { Button } from '../ui'
+import Preview from './Preview'
+import { useStart } from './useStart'
 
 export default function Hero() {
-  const { openAuth } = useAuth()
-
+  const { openAuth, tryAsGuest } = useStart()
   return (
-    <section className="min-h-screen bg-brand-bg pt-16 flex items-center relative overflow-hidden">
-      <div className="absolute -top-32 -right-32 w-96 h-96 bg-brand-primary/5 rounded-full pointer-events-none" />
-      <div className="absolute bottom-0 -left-16 w-72 h-72 bg-brand-cta/5 rounded-full pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Content */}
-          <div className="max-w-xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-brand-primary/10 text-brand-primary text-xs font-body font-semibold rounded-full mb-6">
-              <Sparkles className="w-3.5 h-3.5" />
-              Cambridge CIE A Level Revision
-            </div>
-
-            <h1 className="font-heading text-6xl lg:text-7xl xl:text-8xl font-bold text-brand-text leading-[1.05] mb-6">
-              Cook your<br />
-              <span className="text-brand-primary">A Levels.</span>
-            </h1>
-
-            <p className="font-body text-lg text-slate-500 leading-relaxed mb-8 max-w-md">
-              Topical past paper questions, fully worked solutions, and AI-powered revision
-              tools — built for Cambridge Maths, Physics, and Computer Science.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-3 mb-5">
-              <button
-                onClick={openAuth}
-                className="flex items-center justify-center gap-2 px-6 py-3.5 bg-brand-cta hover:bg-emerald-600 text-white font-body font-bold rounded-xl transition-colors duration-150 cursor-pointer text-base"
-              >
-                Get Started — it's free
-                <ArrowRight className="w-4 h-4" />
-              </button>
-              <a
-                href="#how-it-works"
-                className="flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-brand-primary/30 text-brand-primary hover:border-brand-primary hover:bg-brand-primary/5 font-body font-semibold rounded-xl transition-colors duration-150 cursor-pointer text-base"
-              >
-                See how it works
-              </a>
-            </div>
-
-            <p className="text-sm font-body text-slate-400">
-              Sign in · No password needed · Free forever
-            </p>
+    <section className="relative overflow-hidden">
+      <div aria-hidden className="absolute inset-x-0 top-0 h-[520px] -z-10 bg-[radial-gradient(60%_60%_at_20%_0%,rgb(var(--flame)/0.14),transparent_70%)]" />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 pb-16 lg:pb-24 grid lg:grid-cols-[1.05fr_1fr] gap-12 lg:gap-10 items-center">
+        <div className="animate-pop-in">
+          <span className="inline-flex items-center gap-2 rounded-full bg-flame-soft text-flame-strong dark:text-flame text-xs font-bold px-3 py-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-flame" /> Free for CIE Maths, Physics &amp; Computer Science
+          </span>
+          <h1 className="font-display font-extrabold text-ink text-[40px] leading-[1.04] sm:text-6xl tracking-tight mt-5">
+            Everything for your A Levels.{' '}
+            <span className="text-flame-strong dark:text-flame">One kitchen.</span>
+          </h1>
+          <p className="text-lg text-ink-2 mt-5 max-w-xl leading-relaxed">
+            The syllabus, clear notes, real topical past-paper questions with mark schemes, paper links and your grades, all wired together so you always know what to revise next.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 mt-8">
+            <Button size="lg" onClick={openAuth} rightIcon={<ArrowRight className="w-4 h-4" />}>Start revising, free</Button>
+            <Button size="lg" variant="secondary" onClick={tryAsGuest} leftIcon={<UserRound className="w-4 h-4" />}>Try without an account</Button>
           </div>
-
-          {/* Floating question cards */}
-          <div className="hidden lg:block relative h-[440px]">
-            {floatingCards.map((card) => (
-              <div
-                key={card.topic}
-                className={`absolute bg-white rounded-2xl shadow-lg border-l-4 ${card.accent} p-5 w-72 ${card.rotate}`}
-                style={{ top: card.top, left: card.left }}
-              >
-                <div className="text-[10px] font-body font-bold text-slate-400 uppercase tracking-wider mb-1">
-                  {card.subject}
-                </div>
-                <div className="text-sm font-body font-bold text-brand-text mb-2">{card.topic}</div>
-                <div className="text-xs font-body text-slate-500 leading-relaxed">{card.preview}</div>
-                <div className="mt-4 flex gap-1.5">
-                  <div className="h-1.5 flex-1 rounded-full bg-slate-100" />
-                  <div className="h-1.5 flex-1 rounded-full bg-slate-100" />
-                  <div className="h-1.5 w-1/3 rounded-full bg-slate-100" />
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-sm text-ink-3 mt-4">No card, no catch. Guests keep progress on their own device.</p>
         </div>
+        <Preview className="animate-pop-in [animation-delay:120ms] lg:rotate-[1.2deg] max-w-xl w-full mx-auto lg:mx-0" />
       </div>
     </section>
   )
